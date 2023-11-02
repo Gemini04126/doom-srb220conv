@@ -1,0 +1,14 @@
+version "4.1.0"
+
+#include "ZScript/Templates.zsc"			// Templates for objects
+
+#include "ZScript/Enemies/Greenflower.zsc"	// GFZ enemies
+#include "ZScript/Enemies/Techno Hill.zsc"	// THZ enemies
+
+#include "ZScript/Objects/Animals.zsc"		// Freed animals
+#include "ZScript/Objects/Ring.zsc"			// Ring & sparkle
+#include "ZScript/Objects/Monitors.zsc"		// Monitors
+#include "ZScript/Objects/Starpost.zsc"		// Starpost
+
+#include "ZScript/Scenery/Greenflower.zsc"	// GFZ scenery objects
+#include "ZScript/Scenery/Techno Hill.zsc"	// THZ scenery objects

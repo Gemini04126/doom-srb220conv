@@ -1,0 +1,13 @@
+class THZSteamFlower : SRB2SceneryTemplate
+{
+	Default
+	{
+		Tag "THZ Steam Flower";
+	}
+	States
+	{
+		Spawn:
+			THZP ABCD 4;
+			Loop;
+	}
+}

@@ -1,0 +1,43 @@
+DefaultListMenu
+{
+	Font "BigUpper", "Untranslated"
+	Selector "M_CURSOR", -32, 3
+	LineSpacing 18
+}
+
+ListMenu "MainMenuTextOnly"
+{
+	LineSpacing 16
+	StaticPatch 94, 2, "M_DOOM"
+	Position 97, 72
+	IfOption(ReadThis)
+	{
+		Position 97, 64
+	}
+	TextItem "$MNU_NEWGAME", "n", "PlayerclassMenu"
+	TextItem "$MNU_OPTIONS", "o", "OptionsMenu"
+	TextItem "$MNU_LOADGAME", "l", "LoadGameMenu"
+	TextItem "$MNU_SAVEGAME", "s", "SaveGameMenu"
+	IfOption(ReadThis)
+	{
+		TextItem "$MNU_INFO", "i", "ReadThisMenu"
+	}
+	TextItem "$MNU_QUITGAME", "q", "QuitMenu"
+}
+
+ListMenu "PlayerclassMenu"
+{
+	NetgameMessage "$NEWGAME"
+	StaticTextCentered 160, 15, "$MNU_CHOOSECLASS"
+	Position 48, 63
+	PlayerDisplay 220, 63, "20 00 00", "80 00 40"
+	MouseWindow 0, 220
+}
+
+ListMenu "SkillMenu"
+{
+	StaticPatch 96, 14, "M_NEWG", 0, "$MNU_NEWGAME"
+	linespacing 16
+	StaticPatch 54, 38, "M_SKILL", 0, "$MNU_CHOOSESKILL"
+	Position 48, 63
+}

@@ -1,0 +1,226 @@
+///////////
+// FLATS //
+///////////
+flat NUKAGE1
+	pic NUKAGE1 tics 4
+	pic NUKAGE2 tics 4
+	pic NUKAGE3 tics 4
+flat FWATER1
+	pic FWATER1 tics 4
+	pic FWATER2 tics 4
+	pic FWATER3 tics 4
+	pic FWATER4 tics 4
+	pic FWATER5 tics 4
+	pic FWATER6 tics 4
+	pic FWATER7 tics 4
+	pic FWATER8 tics 4
+	pic FWATER9 tics 4
+	pic FWATER10 tics 4
+	pic FWATER11 tics 4
+	pic FWATER12 tics 4
+	pic FWATER13 tics 4
+	pic FWATER14 tics 4
+	pic FWATER15 tics 4
+	pic FWATER16 tics 4
+flat BWATER01
+	pic BWATER01 tics 4
+	pic BWATER02 tics 4
+	pic BWATER03 tics 4
+	pic BWATER04 tics 4
+	pic BWATER05 tics 4
+	pic BWATER06 tics 4
+	pic BWATER07 tics 4
+	pic BWATER08 tics 4
+	pic BWATER09 tics 4
+	pic BWATER10 tics 4
+	pic BWATER11 tics 4
+	pic BWATER12 tics 4
+	pic BWATER13 tics 4
+	pic BWATER14 tics 4
+	pic BWATER15 tics 4
+	pic BWATER16 tics 4
+flat LWATER1
+	pic LWATER1 tics 4
+	pic LWATER2 tics 4
+	pic LWATER3 tics 4
+	pic LWATER4 tics 4
+	pic LWATER5 tics 4
+	pic LWATER6 tics 4
+	pic LWATER7 tics 4
+	pic LWATER8 tics 4
+	pic LWATER9 tics 4
+	pic LWATER10 tics 4
+	pic LWATER11 tics 4
+	pic LWATER12 tics 4
+	pic LWATER13 tics 4
+	pic LWATER14 tics 4
+	pic LWATER15 tics 4
+	pic LWATER16 tics 4
+flat WATER0
+	pic WATER0 tics 4
+	pic WATER1 tics 4
+	pic WATER2 tics 4
+	pic WATER3 tics 4
+	pic WATER4 tics 4
+	pic WATER5 tics 4
+	pic WATER6 tics 4
+	pic WATER7 tics 4
+/*
+flat SWATER1
+	pic SWATER1 tics 8
+	pic SWATER2 tics 8
+	pic SWATER3 tics 8
+	pic SWATER4 tics 8
+*/
+flat LAVA1
+	pic LAVA1 tics 8
+	pic LAVA2 tics 8
+	pic LAVA3 tics 8
+	pic LAVA4 tics 8
+flat BLOOD1
+	pic BLOOD1 tics 8
+	pic BLOOD2 tics 8
+	pic BLOOD3 tics 8
+flat RROCK05
+	pic RROCK05 tics 8
+	pic RROCK06 tics 8
+	pic RROCK07 tics 8
+	pic RROCK08 tics 8
+flat QUIKSN01
+	pic QUIKSN01 tics 4
+	pic QUIKSN02 tics 4
+	pic QUIKSN03 tics 4
+	pic QUIKSN04 tics 4
+	pic QUIKSN05 tics 4
+	pic QUIKSN06 tics 4
+	pic QUIKSN07 tics 4
+	pic QUIKSN08 tics 4
+	pic QUIKSN09 tics 4
+	pic QUIKSN10 tics 4
+	pic QUIKSN11 tics 4
+	pic QUIKSN12 tics 4
+	pic QUIKSN13 tics 4
+	pic QUIKSN14 tics 4
+	pic QUIKSN15 tics 4
+	pic QUIKSN16 tics 4
+flat CHEMG01
+	pic CHEMG01 tics 4
+	pic CHEMG02 tics 4
+	pic CHEMG03 tics 4
+	pic CHEMG04 tics 4
+	pic CHEMG05 tics 4
+	pic CHEMG06 tics 4
+	pic CHEMG07 tics 4
+	pic CHEMG08 tics 4
+	pic CHEMG09 tics 4
+	pic CHEMG10 tics 4
+	pic CHEMG11 tics 4
+	pic CHEMG12 tics 4
+	pic CHEMG13 tics 4
+	pic CHEMG14 tics 4
+	pic CHEMG15 tics 4
+	pic CHEMG16 tics 4
+flat GOOP01
+	pic GOOP01 tics 4
+	pic GOOP02 tics 4
+	pic GOOP03 tics 4
+	pic GOOP04 tics 4
+	pic GOOP05 tics 4
+	pic GOOP06 tics 4
+	pic GOOP07 tics 4
+	pic GOOP08 tics 4
+	pic GOOP09 tics 4
+	pic GOOP10 tics 4
+	pic GOOP11 tics 4
+	pic GOOP12 tics 4
+	pic GOOP13 tics 4
+	pic GOOP14 tics 4
+	pic GOOP15 tics 4
+	pic GOOP16 tics 4
+flat SLIME05
+	pic SLIME05 tics 4
+	pic SLIME06 tics 4
+	pic SLIME07 tics 4
+	pic SLIME08 tics 4
+flat THZBOXF1
+	pic THZBOXF1 tics 2
+	pic THZBOXF2 tics 2
+	pic THZBOXF3 tics 2
+	pic THZBOXF4 tics 2
+flat ALTBOXF1
+	pic ALTBOXF1 tics 2
+	pic ALTBOXF2 tics 2
+	pic ALTBOXF3 tics 2
+	pic ALTBOXF4 tics 2
+flat BLUE1
+	pic BLUE1 tics 4
+	pic BLUE2 tics 4
+	pic BLUE3 tics 4
+flat GREY1
+	pic GREY1 tics 4
+	pic GREY2 tics 4
+	pic GREY3 tics 4
+
+//////////////
+// TEXTURES //
+//////////////
+texture GFALL1
+	pic GFALL1 tics 2
+	pic GFALL2 tics 2
+	pic GFALL3 tics 2
+	pic GFALL4 tics 2
+texture CFALL1
+	pic CFALL1 tics 2
+	pic CFALL2 tics 2
+	pic CFALL3 tics 2
+	pic CFALL4 tics 2
+texture TFALL1
+	pic TFALL1 tics 2
+	pic TFALL2 tics 2
+	pic TFALL3 tics 2
+	pic TFALL4 tics 2
+texture AFALL1
+	pic AFALL1 tics 2
+	pic AFALL2 tics 2
+	pic AFALL3 tics 2
+	pic AFALL4 tics 2
+texture THZBOX01
+	pic THZBOX01 tics 2
+	pic THZBOX02 tics 2
+	pic THZBOX03 tics 2
+	pic THZBOX04 tics 2
+texture ALTBOX01
+	pic ALTBOX01 tics 2
+	pic ALTBOX02 tics 2
+	pic ALTBOX03 tics 2
+	pic ALTBOX04 tics 2
+texture SFALL1
+	pic SFALL1 tics 4
+	pic SFALL2 tics 4
+	pic SFALL3 tics 4
+	pic SFALL4 tics 4
+texture BFALL1
+	pic BFALL1 tics 2
+	pic BFALL2 tics 2
+	pic BFALL3 tics 2
+	pic BFALL4 tics 2
+texture BLUEW1
+	pic BLUEW1 tics 4
+	pic BLUEW2 tics 4
+	pic BLUEW3 tics 4
+texture GREYW1
+	pic GREYW1 tics 4
+	pic GREYW2 tics 4
+	pic GREYW3 tics 4
+texture COMP4
+	pic COMP4 tics 4
+	pic COMP5 tics 4
+	pic COMP6 tics 4
+texture RED1
+	pic RED1 tics 4
+	pic RED2 tics 4
+	pic RED3 tics 4
+texture YEL1
+	pic YEL1 tics 4
+	pic YEL2 tics 4
+	pic YEL3 tics 4

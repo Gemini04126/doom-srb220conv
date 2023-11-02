@@ -1,0 +1,96 @@
+class BlueCrawla : SRB2EnemyTemplate
+{
+	Default
+	{
+		Tag "Blue Crawla";
+		Health 20;
+		ReactionTime 32;
+		PainChance 200;
+		Speed 3;
+		Radius 24;
+		Height 32;
+		Mass 100;
+		DropItem "Flicky";
+	}
+	States
+	{
+		Spawn:
+			POSS A 5 A_Look;
+			Loop;
+		See:
+			POSS ABCDEFGHIJKLMNOPQ 3 A_Chase;
+			Loop;
+	}
+}
+
+class RedCrawla : SRB2EnemyTemplate
+{
+	Default
+	{
+		Tag "Red Crawla";
+		Health 20;
+		ReactionTime 32;
+		PainChance 170;
+		Speed 3;
+		Radius 24;
+		Height 32;
+		Mass 100;
+		DropItem "Flicky";
+	}
+	States
+	{
+		Spawn:
+			SPOS A 5 A_Look;
+			Loop;
+		See:
+			SPOS ABCDEFGHIJKLMNOPQ 1 A_Chase;
+			Loop;
+	}
+}
+
+class StupidDumbUnnamedRoboFish : SRB2EnemyTemplate
+{
+	state A_FishJump()
+	{
+//		if ((self.pos.z <= self.floorz) || (self.pos.z <= self.watertop - (64 << FRACBITS)))
+		if ((self.pos.z <= self.floorz))
+		{
+			if (self.threshold == 0) self.threshold = 44;
+			self.vel.z = self.threshold/1.5;///4;	//*(FRACUNIT/4);
+			return ResolveState("See");
+		}
+
+		if (self.vel.z < 0)
+			return ResolveState("Melee");
+
+		return ResolveState(null);
+	}
+	Default
+	{
+		Tag "Stupid Dumb Unnamed RoboFish";
+		+DONTTHRUST
+		ReactionTime 8;
+		Health 20;
+		Radius 8;
+		Height 28;
+		Mass 100;
+		Damage 3;
+		DropItem "Flicky";
+	}
+	States
+	{
+		Spawn:
+			// S_FISH2
+			FISH B 1 A_FishJump;
+			Goto See;
+		See:
+			// S_FISH1
+			FISH B 1;
+			Goto Spawn;
+		Melee:
+			// S_FISH3
+			FISH A 1;
+			FISH B 1 A_FishJump;
+			Loop;
+	}
+}

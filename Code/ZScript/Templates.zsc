@@ -1,0 +1,43 @@
+class SRB2EnemyTemplate : Actor
+{
+	Default
+	{
+		Monster;
+		+FLOORCLIP +DONTCORPSE +NOBLOOD
+		DeathSound "sfx/pop";
+	}
+	States
+	{
+		Death:
+			XPLD A 1 {
+				A_Scream();
+				A_NoBlocking();
+				bNOGRAVITY = true;
+				bSOLID = false;
+			}
+			XPLD BCD 5;
+			Stop;
+	}
+}
+
+class SRB2SceneryTemplate : Actor
+{
+	Default
+	{
+		+NOINTERACTION
+	}
+}
+
+class SRB2MonitorTemplate : Actor
+{
+	Default
+	{
+		Health 1;
+		ReactionTime 8;
+		Radius 16;
+		Height 32;
+		Mass 100;
+		+FLOORCLIP +SOLID +SHOOTABLE +NOBLOOD
+		DeathSound "sfx/pop";
+	}
+}

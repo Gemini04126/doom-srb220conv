@@ -1,0 +1,108 @@
+class GoldBuzz : SRB2EnemyTemplate
+{
+	/*
+	state A_BuzzFly()
+	{
+		if (self.bAMBUSH)
+			return ResolveState(null);
+		
+		if (self.reactiontime)
+			self.reactiontime--;
+		
+		// modify target threshold
+		if (self.threshold)
+		{
+			if (!self.target || self.target.health <= 0)
+				self.threshold = 0;
+			else
+				self.threshold--;
+		}
+
+		if (!self.target || !(self.target.bSHOOTABLE))
+		{
+			// look for a new target
+			if (P_LookForPlayers(self, true, false))
+				return ResolveState(null); // got a new target
+			
+//			self.vel.z = self.vel.y = self.vel.z = 0; // were one of these meant to be vel.x??
+			self.vel.x = self.vel.y = self.vel.z = 0; // fixed it... hope it works okay
+			return ResolveState("Spawn");
+		}
+
+		// turn towards movement direction if not there yet
+		self.angle = R_PointToAngle2(self.x, self.y, self.target.x, self.target.y);
+
+		if (self.target.health <= 0 || (!self.threshold && !P_CheckSight(self, self.target)))
+		{
+//			if ((multiplayer || netgame) && P_LookForPlayers(self, true, false))
+//				return ResolveState(null); // got a new target
+
+			self.vel.x = self.vel.y = self.vel.z = 0;
+			return ResolveState("Spawn"); // Go back to looking around
+		}
+
+		// If the player is over 3072 fracunits away, then look for another player
+		if (P_AproxDistance(P_AproxDistance(self.target.x - self.x, self.target.y - self.y),
+			self.target.z - self.z) > 3072) // originally 3072*FRACUNIT... idk
+		{
+//			if ((multiplayer || netgame)
+//				P_LookForPlayers(self, true, false); // maybe get a new target
+			return ResolveState(null);
+		}
+
+		// chase towards player
+		{
+			int dist, realspeed;
+
+			if (gameskill <= sk_easy)
+				realspeed = FixedDiv(self.info.speed,5/2);
+			else if (gameskill < sk_hard)
+				realspeed = self.info.speed;
+			else
+				realspeed = FixedMul(self.info.speed,5/2);
+			
+			dist = P_AproxDistance(P_AproxDistance(self.target.x - self.x,
+				self.target.y - self.y), self.target.z, self.z);
+
+			if (dist < 1)
+				dist = 1;
+			
+			self.vel.x = FixedMul(FixedDiv(self.target.x - self.x, dist), realspeed);
+			self.vel.y = FixedMul(FixedDiv(self.target.y - self.y, dist), realspeed);
+			self.vel.z = FixedMul(FixedDiv(self.target.z - self.z, dist), realspeed);
+
+			if (self.z+self.vel.z >= self.waterbottom && self.watertop > self.floorz
+				&& self.z+self.vel.z > self.watertop - 256) // originally 256*FRACUNIT... idk
+			{
+				self.vel.z = 0;
+				self.z = self.watertop;
+			}
+		}
+	}
+	*/
+	Default
+	{
+		Tag "Gold Buzz";
+		Health 20;
+		ReactionTime 2;
+		PainChance 3072; // what the fuck?
+		Speed 4;
+		Radius 20;
+		Height 24;
+		Mass 100;
+		DropItem "Flicky";
+		+NOGRAVITY
+//		+SLIDESONWALLS
+		+FLOAT
+	}
+	States
+	{
+		Spawn:
+			BUZZ AB 2 A_Look;
+			Loop;
+		See:
+//			BUZZ AB 2 A_BuzzFly;
+			BUZZ AB 2 A_Chase;
+			Loop;
+	}
+}

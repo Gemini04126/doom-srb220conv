@@ -1,0 +1,23 @@
+class Flicky : Actor
+{
+	Default
+	{
+		Radius 16;
+		Height 16;
+		ReactionTime 8;
+		Speed 8;
+		Mass 16;
+		+FLOAT;
+		+NOGRAVITY;
+	}
+	States
+	{
+		Spawn:
+			BIRD AB 4 {
+				A_Chase();
+				bNOGRAVITY = true;
+				bFLOAT = true;
+			}
+			Loop;
+	}
+}

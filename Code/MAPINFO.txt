@@ -1,0 +1,79 @@
+GameInfo
+{
+	BorderFlat = "FLOOR0_3"
+	ForceTextInMenus = true
+	TitleMusic = "D_TITLES"
+	IntermissionMusic = "D_LCLEAR"
+	MenuFontColor_Title = "UNTRANSLATED"
+
+	QuitMessages = "Eggman's tied explosives\nto your girlfriend, and\nwill activate them if\nyou press the 'Y' key!\nPress 'N' to save her!",
+	"What would Tails say if\nhe saw you quitting the game?",
+	"Hey!\nWhere do ya think you're goin'?",
+	"Forget your studies!\nPlay some more!",
+	"You're trying to say you\nlike Sonic Heroes better than\nthis, right?",
+	"Don't leave yet -- there's a\nSuper Emerald around that corner!",
+	"You'd rather work than play?",
+	"Go ahead and leave. See if I care...\n*sniffle*",
+
+	"If you leave now,\nEggman will take over the world!",
+	"Don't quit!\nThere are animals\nto save!",
+	"Aw c'mon, just bop\na few more robots!",
+	"Just because you can't\nget that Chaos Emerald...",
+	"If you leave, I'll use\nmy spin attack on you!",
+	"Don't go!\nYou might find the hidden\nlevels!",
+	"Hit the 'N' key, Sonic!\nThe 'N' key!"
+}
+
+DoomEdNums
+{
+	// GFZ enemies
+	3004 = BlueCrawla
+	9 = RedCrawla
+	58 = StupidDumbUnnamedRoboFish // actual name
+
+	// THZ enemies
+	5005 = GoldBuzz
+
+	// Monitors
+	2011 = SuperRingMonitor
+	48 = RingShieldMonitor
+	2028 = WaterShieldMonitor
+	2022 = InvincibilityMonitor
+
+	// Various map objects
+	2014 = Ring
+	3006 = Starpost, Autosave
+
+	// GFZ scenery
+	73 = GFZPurpleFlower
+	36 = GFZOrangeFlower
+	70 = GFZBigFlower
+	75 = GFZBush
+	74 = GFZBerryBush
+	// THZ scenery
+	2035 = THZSteamFlower
+}
+
+map MAP01 "Greenflower Zone Act 1"
+{
+	Music = "D_MAP01M"
+	Sky1 = "SKY1"
+	Next = MAP02
+	ForceNoSkyStretch
+}
+
+map MAP02 "Greenflower Zone Act 2"
+{
+	Music = "D_MAP02M"
+	Sky1 = "SKY1"
+	Next = MAP03
+	ForceNoSkyStretch
+}
+
+map MAP03 "Greenflower Zone Act 3"
+{
+	Music = "D_MAP01M"
+	Sky1 = "SKY1"
+	Next = MAP04
+	ForceNoSkyStretch
+}

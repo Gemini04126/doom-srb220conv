@@ -1,0 +1,59 @@
+class SuperRingMonitor : SRB2MonitorTemplate
+{
+	Default
+	{
+		Tag "Super Ring monitor";
+	}
+	States
+	{
+		Spawn:
+			SRBX A 2;
+			MTEX A 1;
+			Loop;
+	}
+}
+
+class RingShieldMonitor : SRB2MonitorTemplate
+{
+	Default
+	{
+		Tag "Ring Shield monitor";
+	}
+	States
+	{
+		Spawn:
+			YLTV A 2;
+			MTEX A 1;
+			Loop;
+	}
+}
+
+class WaterShieldMonitor : SRB2MonitorTemplate
+{
+	Default
+	{
+		Tag "Water Shield monitor";
+	}
+	States
+	{
+		Spawn:
+			BLTV A 2;
+			MTEX A 1;
+			Loop;
+	}
+}
+
+class InvincibilityMonitor : SRB2MonitorTemplate
+{
+	Default
+	{
+		Tag "Invincibility monitor";
+	}
+	States
+	{
+		Spawn:
+			PINV A 2;
+			MTEX A 1;
+			Loop;
+	}
+}

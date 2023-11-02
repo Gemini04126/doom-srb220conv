@@ -1,0 +1,69 @@
+class GFZPurpleFlower : SRB2SceneryTemplate
+{
+	Default
+	{
+		Tag "GFZ Purple Flower";
+	}
+	States
+	{
+		Spawn:
+			FWR3 A -1;
+			Stop;
+	}
+}
+
+class GFZOrangeFlower : SRB2SceneryTemplate
+{
+	Default
+	{
+		Tag "GFZ Orange Flower";
+	}
+	States
+	{
+		Spawn:
+			FWR1 AB 14;
+			Loop;
+	}
+}
+
+class GFZBigFlower : SRB2SceneryTemplate
+{
+	Default
+	{
+		Tag "GFZ Big Flower";
+	}
+	States
+	{
+		Spawn:
+			FWR2 AB 7;
+			Loop;
+	}
+}
+
+class GFZBush : SRB2SceneryTemplate
+{
+	Default
+	{
+		Tag "GFZ Bush";
+	}
+	States
+	{
+		Spawn:
+			BUS2 A -1;
+			Stop;
+	}
+}
+
+class GFZBerryBush : SRB2SceneryTemplate
+{
+	Default
+	{
+		Tag "GFZ Berry Bush";
+	}
+	States
+	{
+		Spawn:
+			BUS1 A -1;
+			Stop;
+	}
+}

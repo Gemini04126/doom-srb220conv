@@ -1,0 +1,2 @@
+sfx/pop		DSPOP
+sfx/strpst	DSSTRPST
