@@ -3,7 +3,7 @@ class SRB2EnemyTemplate : Actor
 	Default
 	{
 		Monster;
-		+FLOORCLIP +DONTCORPSE +NOBLOOD
+		+DONTCORPSE +NOBLOOD +NOTDMATCH
 		DeathSound "sfx/pop";
 	}
 	States
@@ -38,7 +38,7 @@ class SRB2MonitorTemplate : Actor
 		Radius 16;
 		Height 32;
 		Mass 100;
-		+FLOORCLIP +SOLID +SHOOTABLE +NOBLOOD +COUNTITEM
+		+SOLID +SHOOTABLE +NOBLOOD +COUNTITEM
 		DeathSound "sfx/pop";
 	}
 	States
@@ -59,20 +59,9 @@ class SRB2MonitorTemplate : Actor
 			Stop;
 	}
 }
-
 class SRB2MonitorIconTemplate : Actor
 {
-	void A_ItemBox()
-	{
-/*
-		if (!self.target || !self.target.player)
-		{
-			if(cv_debug)
-				CONS_Printf("ERROR: Powerup has no target!\n");
-			return;
-		}
-*/
-	}
+	void A_ItemBox() {}	// filled in by child objects
 	Default
 	{
 		Threshold 68;
@@ -93,5 +82,22 @@ class SRB2MonitorIconTemplate : Actor
 			#### # 0 A_Stop;
 			#### # 18 A_ItemBox;
 			Stop;
+	}
+}
+
+class SRB2SpringTemplate : Actor
+{
+	override void Touch(Actor toucher)
+	{
+		A_StartSound("sfx/spring");
+		SetState(ResolveState("Touched"));
+	}
+	Default
+	{
+		Speed 20;
+		Radius 20;
+		Height 16;
+		Mass 100;
+		+SPECIAL
 	}
 }

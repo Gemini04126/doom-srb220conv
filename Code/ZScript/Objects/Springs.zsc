@@ -1,0 +1,78 @@
+class YellowDiagUpSpring : SRB2SpringTemplate
+{
+	override void Touch(Actor toucher)
+	{
+		Super.Touch(toucher);
+		toucher.Angle = self.Angle;
+		toucher.Vel.X = cos(self.Angle) * self.Speed;
+		toucher.Vel.Y = sin(self.Angle) * self.Speed;
+		toucher.Vel.Z = self.Speed;
+	}
+	Default
+	{
+		Speed 20;
+		Radius 16;
+		Height 16;
+	}
+	States
+	{
+		Spawn:
+			YSPR A -1;
+			Stop;
+		Touched:
+			#### BCDEDCB 1;
+			TNT1 A 0 {return ResolveState("Spawn");}
+			Stop;
+	}
+}
+class RedDiagUpSpring : YellowDiagUpSpring
+{
+	Default
+	{
+		Speed 32;
+	}
+	States
+	{
+		Spawn:
+			RSPR A -1;
+			Stop;
+	}
+}
+
+class YellowUpSpring : SRB2SpringTemplate
+{
+	override void Touch(Actor toucher)
+	{
+		Super.Touch(toucher);
+		toucher.Vel.Z = self.Speed;
+	}
+	Default
+	{
+		Speed 20;
+		Radius 20;
+		Height 16;
+	}
+	States
+	{
+		Spawn:
+			SPRY A -1;
+			Stop;
+		Touched:
+			#### EEEEDCB 1;
+			TNT1 A 0 {return ResolveState("Spawn");}
+			Stop;
+	}
+}
+class RedUpSpring : YellowUpSpring
+{
+	Default
+	{
+		Speed 32;
+	}
+	States
+	{
+		Spawn:
+			SPRR A -1;
+			Stop;
+	}
+}

@@ -1,4 +1,5 @@
 sfx/pop		DSPOP
 sfx/strpst	DSSTRPST
 sfx/shield	DSSHIELD
+sfx/spring	DSSPRING
 sfx/1up		"Music/O_XTLIFE.ogg"	// mostly just here for temporary reasons.

@@ -1,0 +1,101 @@
+adddefaultmap
+{
+	Gravity = 400
+	AirControl = 0.33
+	translator = SRB2XLAT
+}
+
+// GFZ
+map MAP01 "Greenflower Zone Act 1"
+{
+	Music = "O_MAP01M"
+	Sky1 = "SKY1"
+	Next = MAP02
+}
+map MAP02 "Greenflower Zone Act 2"
+{
+	Music = "O_MAP02M"
+	Sky1 = "SKY1"
+	Next = MAP03
+}
+map MAP03 "Greenflower Zone Act 3"
+{
+	Music = "O_MAP03M"
+	Sky1 = "SKY1"
+	Next = MAP04
+}
+
+// THZ
+map MAP04 "Techno Hill Zone Act 1"
+{
+	Music = "O_MAP04M"
+	Sky1 = "SKY4"
+	Next = MAP05
+}
+map MAP05 "Techno Hill Zone Act 2"
+{
+	Music = "O_MAP05M"
+	Sky1 = "SKY4"
+	Next = MAP06
+}
+map MAP06 "Techno Hill Zone Act 3"
+{
+	Music = "O_MAP03M"
+	Sky1 = "SKY4"
+	Next = MAP07
+}
+
+// CEZ
+// Add rain here! Look at Eviternity or something.
+map MAP07 "Castle Eggman Zone Act 1"
+{
+	Music = "O_MAP07M"
+	Sky1 = "SKY7"
+	Next = MAP08
+}
+map MAP08 "Castle Eggman Zone Act 2"
+{
+	Music = "O_MAP08M"
+	Sky1 = "SKY7"
+	Next = MAP09
+}
+map MAP09 "Castle Eggman Zone Act 3"
+{
+	Music = "O_MAP09M"
+	Sky1 = "SKY7"
+	Next = MAP16
+}
+
+// Extra levels
+map MAP16 "Red Volcano Zone Act 1"
+{
+	Music = "O_MAP16M"
+	Sky1 = "SKY1"
+	Next = MAP29
+}
+
+map MAP29 "Spring Hill Zone"
+{
+	Music = "O_MAP29M"
+	Sky1 = "SKY29"
+	Next = MAP30
+}
+
+map MAP30 "Mario Koopa Blast Zone Act 1"
+{
+	Music = "O_MAP30M"
+	Sky1 = "SKY30"
+	Next = MAP31
+}
+map MAP31 "Mario Koopa Blast Zone Act 2"
+{
+	Music = "O_MAP31M"
+	Sky1 = "SKY30"
+	Next = MAP32
+}
+map MAP32 "Mario Koopa Blast Zone Act 3"
+{
+	Music = "O_MAP32M"
+	Sky1 = "SKY30"
+	Next = MAP40
+}
