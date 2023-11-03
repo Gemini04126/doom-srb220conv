@@ -10,6 +10,99 @@ class SuperRingMonitor : SRB2MonitorTemplate
 			SRBX A 2;
 			MTEX A 1;
 			Loop;
+		Death:
+			TNT1 A 0 A_SpawnItemEx("SuperRingIcon", flags: SXF_TRANSFERPOINTERS);
+			Goto Death2;
+	}
+}
+class SuperRingIcon : SRB2MonitorIconTemplate
+{
+	void A_ItemBox()
+	{
+		A_StartSound("misc/i_pkup");
+		A_GiveInventory("Ring", 10, AAPTR_TARGET);
+	}
+	States
+	{
+		Spawn:
+			SRBX B 0 {return ResolveState("See");}
+		See:
+			#### # 18 A_ChangeVelocity(z: self.Speed);
+			#### # 0 A_Stop;
+			#### # 18 A_ItemBox;
+			Stop;
+	}
+}
+
+class SilverRingMonitor : SRB2MonitorTemplate
+{
+	Default
+	{
+		Tag "Silver Ring monitor";
+	}
+	States
+	{
+		Spawn:
+			GRBX A 2;
+			MTEX A 1;
+			Loop;
+		Death:
+			TNT1 A 0 A_SpawnItemEx("SilverRingIcon", flags: SXF_TRANSFERPOINTERS);
+			Goto Death2;
+	}
+}
+class SilverRingIcon : SRB2MonitorIconTemplate
+{
+	void A_ItemBox()
+	{
+		A_StartSound("misc/i_pkup");
+		A_GiveInventory("Ring", 25, AAPTR_TARGET);
+	}
+	States
+	{
+		Spawn:
+			GRBX B 0 {return ResolveState("See");}
+		See:
+			#### # 18 A_ChangeVelocity(z: self.Speed);
+			#### # 0 A_Stop;
+			#### # 18 A_ItemBox;
+			Stop;
+	}
+}
+
+class ExtraLifeMonitor : SRB2MonitorTemplate
+{
+	Default
+	{
+		Tag "Extra Life monitor";
+	}
+	States
+	{
+		Spawn:
+			PRUP A 2;
+			MTEX A 1;
+			Loop;
+		Death:
+			TNT1 A 0 A_SpawnItemEx("ExtraLifeIcon", flags: SXF_TRANSFERPOINTERS);
+			Goto Death2;
+	}
+}
+class ExtraLifeIcon : SRB2MonitorIconTemplate
+{
+	void A_ItemBox()
+	{
+		A_StartSound("sfx/1up");
+		A_GiveInventory("Ring", 100, AAPTR_TARGET);
+	}
+	States
+	{
+		Spawn:
+			PRUP B 0 {return ResolveState("See");}
+		See:
+			#### # 18 A_ChangeVelocity(z: self.Speed);
+			#### # 0 A_Stop;
+			#### # 18 A_ItemBox;
+			Stop;
 	}
 }
 
@@ -25,6 +118,26 @@ class RingShieldMonitor : SRB2MonitorTemplate
 			YLTV A 2;
 			MTEX A 1;
 			Loop;
+		Death:
+			TNT1 A 0 A_SpawnItemEx("RingShieldIcon", flags: SXF_TRANSFERPOINTERS);
+			Goto Death2;
+	}
+}
+class RingShieldIcon : SRB2MonitorIconTemplate
+{
+	void A_ItemBox()
+	{
+		A_StartSound("sfx/shield");
+	}
+	States
+	{
+		Spawn:
+			YLTV B 0 {return ResolveState("See");}
+		See:
+			#### # 18 A_ChangeVelocity(z: self.Speed);
+			#### # 0 A_Stop;
+			#### # 18 A_ItemBox;
+			Stop;
 	}
 }
 
@@ -40,6 +153,61 @@ class WaterShieldMonitor : SRB2MonitorTemplate
 			BLTV A 2;
 			MTEX A 1;
 			Loop;
+		Death:
+			TNT1 A 0 A_SpawnItemEx("WaterShieldIcon", flags: SXF_TRANSFERPOINTERS);
+			Goto Death2;
+	}
+}
+class WaterShieldIcon : SRB2MonitorIconTemplate
+{
+	void A_ItemBox()
+	{
+		A_StartSound("sfx/shield");
+	}
+	States
+	{
+		Spawn:
+			BLTV B 0 {return ResolveState("See");}
+		See:
+			#### # 18 A_ChangeVelocity(z: self.Speed);
+			#### # 0 A_Stop;
+			#### # 18 A_ItemBox;
+			Stop;
+	}
+}
+
+class BombShieldMonitor : SRB2MonitorTemplate
+{
+	Default
+	{
+		Tag "Bomb Shield monitor";
+	}
+	States
+	{
+		Spawn:
+			BKTV A 2;
+			MTEX A 1;
+			Loop;
+		Death:
+			TNT1 A 0 A_SpawnItemEx("BombShieldIcon", flags: SXF_TRANSFERPOINTERS);
+			Goto Death2;
+	}
+}
+class BombShieldIcon : SRB2MonitorIconTemplate
+{
+	void A_ItemBox()
+	{
+		A_StartSound("sfx/shield");
+	}
+	States
+	{
+		Spawn:
+			BKTV B 0 {return ResolveState("See");}
+		See:
+			#### # 18 A_ChangeVelocity(z: self.Speed);
+			#### # 0 A_Stop;
+			#### # 18 A_ItemBox;
+			Stop;
 	}
 }
 
@@ -55,5 +223,22 @@ class InvincibilityMonitor : SRB2MonitorTemplate
 			PINV A 2;
 			MTEX A 1;
 			Loop;
+		Death:
+			TNT1 A 0 A_SpawnItemEx("InvincibilityIcon", flags: SXF_TRANSFERPOINTERS);
+			Goto Death2;
+	}
+}
+class InvincibilityIcon : SRB2MonitorIconTemplate
+{
+	void A_ItemBox() {}
+	States
+	{
+		Spawn:
+			PINV B 0 {return ResolveState("See");}
+		See:
+			#### # 18 A_ChangeVelocity(z: self.Speed);
+			#### # 0 A_Stop;
+			#### # 18 A_ItemBox;
+			Stop;
 	}
 }

@@ -36,8 +36,11 @@ DoomEdNums
 
 	// Monitors
 	2011 = SuperRingMonitor
+	2012 = SilverRingMonitor
+	41 = ExtraLifeMonitor
 	48 = RingShieldMonitor
 	2028 = WaterShieldMonitor
+	2018 = BombShieldMonitor
 	2022 = InvincibilityMonitor
 
 	// Various map objects

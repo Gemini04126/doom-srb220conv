@@ -1,29 +1,29 @@
 class Starpost : Actor
 {
+	override void Touch(Actor toucher)
+	{
+		Autosave();
+		A_StartSound("sfx/strpst");
+		bSpecial = false;
+		SetState(ResolveState("Touched"));
+	}
 	Default
 	{
 		Tag "Starpost";
-		DeathSound "sfx/strpst";
-		Speed 8;
-		ReactionTime 8;
 		Radius 32;
 		Height 80;
-		Mass 4;
-		Health 1;
-		+BUMPSPECIAL +TOUCHY +VULNERABLE
-		Activation THINGSPEC_ClearSpecial;
+		+SPECIAL
 	}
 	States
 	{
 		Spawn:
-			STPT A 1;
-			Loop;
-		See:
+			STPT A -1;
+			Stop;
+		Touched:
+			STPT CDEFGHIJKLMNOPQACDEFGHIJKLMNOPQ 1;
+			Goto Flashing;
+		Flashing:
 			STPT AB 2;
 			Loop;
-		Death:
-			TNT1 A 0 A_Scream;
-			STPT BCDEFGHIJKLMNOPQACDEFGHIJKLMNOPQ 1;
-			Goto See;
 	}
 }
