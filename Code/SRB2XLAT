@@ -1,3 +1,0 @@
-include "xlat/doom.txt"
-25 = 0, Sector_Set3dFloor (tag, 1, flags, alpha, hi-tag/line ID)
-48 = 0, Sector_Set3dFloor (tag, 2, flags, alpha, hi-tag/line ID)

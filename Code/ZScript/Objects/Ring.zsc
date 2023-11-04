@@ -3,7 +3,7 @@ class Ring : HealthBonus
 	Default
 	{
 		Tag "Ring";
-		+NOGRAVITY
+		+NOGRAVITY -MOVEWITHSECTOR +NOLIFTDROP +NOCLIP
 		Inventory.MaxAmount 9999;
 		Inventory.PickupMessage "";
 		Inventory.Icon "BON1A0";

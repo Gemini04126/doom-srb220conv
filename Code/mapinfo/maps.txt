@@ -99,3 +99,132 @@ map MAP32 "Mario Koopa Blast Zone Act 3"
 	Sky1 = "SKY30"
 	Next = MAP40
 }
+
+// Make it snow! See Eviternity again. Or code it yourself... Or steal the one from 667.
+// Also, somehow make Emerald Hunt a thing. That'd be awesome. Way later, though!!
+map MAP40 "Christmas Hunt"
+{
+	Music = "O_MAPA6M"
+	Sky1 = "SKY40"
+	Next = MAP42
+}
+
+map MAP42 "SA Example"
+{
+	Music = "O_MAP42M"
+	Sky1 = "SKY1"
+	Next = MAP70 // Skip Special Stages. They can be accessed later.
+}
+
+map MAP50 "Special Stage 1"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY60"
+	Next = MAP51
+}
+map MAP51 "Special Stage 2"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY61"
+	Next = MAP52
+}
+map MAP52 "Special Stage 3"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY62"
+	Next = MAP53
+}
+map MAP53 "Special Stage 4"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY63"
+	Next = MAP54
+}
+map MAP54 "Special Stage 5"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY64"
+	Next = MAP55
+}
+map MAP55 "Special Stage 6"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY65"
+	Next = MAP56
+}
+map MAP56 "Special Stage 7"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY66"
+	Next = MAP50
+}
+
+// Skipping Circuit and CTF maps...
+// Match
+map MAP90 "Sapphire Falls Zone"
+{
+	Music = "O_MAP93M"
+	Sky1 = "SKY1"
+	Next = MAP91
+}
+map MAP91 "Thunder Citadel Zone" // Rain.
+{
+	Music = "O_MAP08M"
+	Sky1 = "SKY7"
+	Next = MAP92
+}
+map MAP92 "Desolate Twilight Zone"
+{
+	Music = "O_MAP98M"
+	Sky1 = "SKY94"
+	Next = MAP93
+}
+map MAP93 "Hydro Plant Zone"
+{
+	Music = "O_MAP94M"
+	Sky1 = "SKY1"
+	Next = MAP94
+}
+map MAP94 "Starlit Warehouse Zone"
+{
+	Music = "O_MAP19M"
+	Sky1 = "SKY94"
+	Next = MAP95
+}
+map MAP95 "Midnight Abyss Zone"
+{
+	Music = "O_MAP22M"
+	Sky1 = "SKY96"
+	Next = MAP96
+}
+map MAP96 "Tree Ring Zone"
+{
+	Music = "O_MAPD8M" // I hope...
+	Sky1 = "SKY94"
+	Next = MAP97
+}
+map MAP97 "Zim's Base Zone"
+{
+	Music = "O_MAP97M"
+	Sky1 = "SKY97"
+	Next = MAP98
+}
+map MAP98 "Airborne Temple Zone"
+{
+	Music = "O_MAP92M"
+	Sky1 = "SKY1"
+	Next = MAP99
+}
+map MAP99 "Meadow Match Zone" // the one and only.
+{
+	Music = "O_MAP91M"
+	Sky1 = "SKY1"
+	Next = MAP90
+}
+
+// SRB2JTE
+map MAP23 "SA City"
+{
+	Music = "O_MAP63M"
+	Sky1 = "SKY1"
+}
