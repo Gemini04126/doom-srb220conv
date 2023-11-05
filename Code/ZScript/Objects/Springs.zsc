@@ -160,3 +160,41 @@ class RedDownSpring : YellowDownSpring
 	}
 }
 // I guess there's no upside-down blue spring. Strange!
+
+// Steam, from the steamed clams we're having.
+// Mmm, steamed clams!
+class THZSteam : Actor
+{
+	override void Touch(Actor toucher)
+	{
+		toucher.Vel.Z = self.Speed;
+	}
+	Default
+	{
+		Speed 20;
+		Radius 32;
+		Height 1; // eugh. oh well...
+		Mass 16;
+		+SPECIAL
+	}
+	States
+	{
+		Spawn:
+			STEM A 2 NoDelay {
+				bSPECIAL = true;
+				if (!(Random() % 8))
+				{
+					A_StartSound("sfx/steam1"); // Hiss!
+				}
+				else
+				{
+					A_StartSound("sfx/steam2");
+				}
+				self.vel.z++;
+			}
+			STEM B 2 {bSPECIAL = false;}
+			STEM CDEFGH 2;
+			STEM I 18;
+			Loop;
+	}
+}

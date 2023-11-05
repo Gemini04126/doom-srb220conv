@@ -30,6 +30,7 @@ DoomEdNums
 	39 = RedDiagDownSpring
 	65 = YellowDownSpring
 	66 = RedDownSpring
+	30 = THZSteam
 
 	// GFZ scenery
 	73 = GFZPurpleFlower
