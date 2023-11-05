@@ -20,10 +20,16 @@ DoomEdNums
 	// Various map objects
 	2014 = Ring
 	3006 = Starpost
-	2015 = YellowDiagUpSpring
-	38 = RedDiagUpSpring
+	86 = Signpost
 	28 = YellowUpSpring
 	79 = RedUpSpring
+	5004 = BlueUpSpring
+	2015 = YellowDiagUpSpring
+	38 = RedDiagUpSpring
+	20 = YellowDiagDownSpring
+	39 = RedDiagDownSpring
+	65 = YellowDownSpring
+	66 = RedDownSpring
 
 	// GFZ scenery
 	73 = GFZPurpleFlower

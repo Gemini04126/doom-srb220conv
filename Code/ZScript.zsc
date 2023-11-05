@@ -9,6 +9,7 @@ version "4.1.0"
 #include "ZScript/Objects/Ring.zsc"			// Ring & sparkle
 #include "ZScript/Objects/Monitors.zsc"		// Monitors
 #include "ZScript/Objects/Starpost.zsc"		// Starpost
+#include "ZScript/Objects/Signpost.zsc"		// Signpost
 #include "ZScript/Objects/Springs.zsc"		// Springs
 
 #include "ZScript/Scenery/Greenflower.zsc"	// GFZ scenery objects

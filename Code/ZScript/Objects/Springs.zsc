@@ -39,6 +39,48 @@ class RedDiagUpSpring : YellowDiagUpSpring
 	}
 }
 
+class YellowDiagDownSpring : SRB2SpringTemplate
+{
+	override void Touch(Actor toucher)
+	{
+		Super.Touch(toucher);
+		toucher.Angle = self.Angle;
+		toucher.Vel.X = cos(self.Angle) * self.Speed;
+		toucher.Vel.Y = sin(self.Angle) * self.Speed;
+		toucher.Vel.Z = -self.Speed;
+	}
+	Default
+	{
+		Speed 20;
+		Radius 16;
+		Height 16;
+		+SPAWNCEILING
+	}
+	States
+	{
+		Spawn:
+			YSUD A -1;
+			Stop;
+		Touched:
+			#### BCDEDCB 1;
+			TNT1 A 0 {return ResolveState("Spawn");}
+			Stop;
+	}
+}
+class RedDiagDownSpring : YellowDiagDownSpring
+{
+	Default
+	{
+		Speed 32;
+	}
+	States
+	{
+		Spawn:
+			RSUD A -1;
+			Stop;
+	}
+}
+
 class YellowUpSpring : SRB2SpringTemplate
 {
 	override void Touch(Actor toucher)
@@ -76,3 +118,45 @@ class RedUpSpring : YellowUpSpring
 			Stop;
 	}
 }
+class BlueUpSpring : YellowUpSpring
+{
+	Default
+	{
+		Speed 11;
+	}
+	States
+	{
+		Spawn:
+			SPRB A -1;
+			Stop;
+	}
+}
+
+class YellowDownSpring : YellowUpSpring
+{
+	Default
+	{
+		Speed -20;
+		+SPAWNCEILING
+	}
+	States
+	{
+		Spawn:
+			SUDY A -1;
+			Stop;
+	}
+}
+class RedDownSpring : YellowDownSpring
+{
+	Default
+	{
+		Speed -32;
+	}
+	States
+	{
+		Spawn:
+			SUDR A -1;
+			Stop;
+	}
+}
+// I guess there's no upside-down blue spring. Strange!

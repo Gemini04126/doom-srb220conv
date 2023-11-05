@@ -1,0 +1,51 @@
+class Signpost : Actor
+{
+	bool firstPlayerPassed;
+	override void Tick()
+	{
+		Super.Tick();
+		for (int i = 0; i < MAXPLAYERS; i++)
+		{
+			if (!PlayerInGame[i])
+				continue;
+			let ppawn = players[i].mo;
+			if (ppawn && ppawn.cursector == self.cursector)
+			{
+				if (!firstPlayerPassed)
+				{
+					firstPlayerPassed = true;
+					SetStateLabel("Spin");
+					A_StartSound("sfx/lvpass");
+					return;
+				}
+				else
+				{
+					ppawn.A_GiveInventory("PowerInvulnerable");
+				}
+			}
+			return;
+		}
+		return;
+	}
+	Default
+	{
+		Radius 8;
+		Height 32;
+		Mass 16;
+		+NOBLOCKMAP +NOCLIP
+	}
+	States
+	{
+		Spawn:
+			SIGN D -1;
+			Stop;
+		Spin:
+			SIGN ABCFABCDABCEABCDABCGABCDABCFABCDABCEABCDABCGABCDABC 1;
+			Goto Passed;
+		Passed:
+			SIGN H 24;				// sign
+			SIGN H 1 A_BrainDie;	// end the level
+			SIGN H -1;
+			Stop;
+	}
+}

@@ -56,7 +56,7 @@ class StupidDumbUnnamedRoboFish : SRB2EnemyTemplate
 		if ((self.pos.z <= self.floorz))
 		{
 			if (self.threshold == 0) self.threshold = 44;
-			self.vel.z = self.threshold/4;///4;	//*(FRACUNIT/4);
+			self.vel.z = self.threshold/1;///4;	//*(FRACUNIT/4);
 			return ResolveState("See");
 		}
 
