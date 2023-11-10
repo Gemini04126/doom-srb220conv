@@ -1,9 +1,9 @@
-class SonicPlayer : SRB2PlayerTemplate
+class SRB2KnucklesPlayer : SRB2PlayerTemplate
 {
 	Default
 	{
 		Speed 1.25;
-		Player.DisplayName "Sonic";
+		Player.DisplayName "Knuckles";
 		Player.JumpZ 12;
 		// Sorry, but you should make a new character class...
 		// Unfortunately, due to SRB2's strange naming conventions,
@@ -12,75 +12,75 @@ class SonicPlayer : SRB2PlayerTemplate
 	States
 	{
 		Spawn:
-			SON0 A 105;
+			KNU0 A 105;
 			Goto Tap;
 		Tap:
-			SON0 BC 16;
+			KNU0 BC 16;
 			Loop;
 		See:
 		Walk:
-			SON0 DEFGHIJK 4;
+			KNU0 DEFGHIJK 4;
 			Loop;
 		Jump: // either put this above Roll or Spring
 		Roll:
-			SON0 LMNO 1;
+			KNU0 LMNO 1;
 			Loop;
 		Spring:
-			SON0 P -1;
+			KNU0 P -1;
 			Loop;
 		Run:
-			SON0 QRST 2;
+			KNU0 QRST 2;
 			Loop;
 		Ability:
-			SON0 UV 2;
+			KNU0 UV 2;
 			Loop;
 		Special:
-			SON0 WXYZ 6;
+			KNU0 WXYZ 6;
 			Loop;
 		ClimbStop:
-			SON0 W -1;
+			KNU0 W -1;
 			Loop;
 		Climb:
-			SON0 XYZY 5;
+			KNU0 XYZY 5;
 			Loop;
 		Gasp:
-			SON0 [ 14;
+			KNU0 [ 14;
 			Goto Walk;
 		Pain:
-			SON0 \ -1;
+			KNU0 \ -1;
 			Goto Spawn;
 		Death:
-			SON0 ] 8 A_Fall;
-			SON0 ] 7;
-			SON0 ] -1;
+			KNU0 ] 8 A_Fall;
+			KNU0 ] 7;
+			KNU0 ] -1;
 			Loop;
 		Teeter:
-			SON1 AB 12;
+			KNU1 AB 12;
 			Loop;
 		Fall:
-			SON1 CD 2;
+			KNU1 CD 2;
 			Loop;
 		Ride:
-			SON1 E -1;
+			KNU1 E -1;
 			Loop;
 		SuperStand:
-			SON0 U -1;
+			KNU0 U -1;
 			Loop;
 		SuperWalk:
-			SON0 UV 7;
+			KNU0 UV 7;
 			Loop;
 		SuperFly:
-			SON0 WX 7;
+			KNU0 WX 7;
 			Loop;
 		SuperTeeter:
-			SON0 Y 12;
+			KNU0 Y 12;
 			Loop;
 		SuperPain:
-			SON0 Z -1;
+			KNU0 Z -1;
 			Loop;
 		Melee:
 		Missile:
-			SON0 X 8;
+			KNU0 X 8;
 			Goto Spawn;
 	}
 }
