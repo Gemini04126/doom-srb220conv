@@ -1,0 +1,64 @@
+class SRB2PlayerTemplate : DoomPlayer
+{
+	override void Tick()
+	{
+		Super.Tick();
+		if (InStateSequence(CurState, ResolveState('Spring')))
+		{
+			if (player.mo.vel.z < 0)
+				SetState(ResolveState('Fall'));
+		}
+		if ((player.JumpTics) && (player.buttons && BT_JUMP) && !(InStateSequence(CurState, ResolveState('Jump'))))
+			SetState(ResolveState('Jump'));
+	}
+	override void PlayIdle ()
+	{
+		if (InStateSequence(CurState, ResolveState('Walk')) || InStateSequence(CurState, ResolveState('Run')) || InStateSequence(CurState, ResolveState('Spring')) || InStateSequence(CurState, ResolveState('Fall')) || InStateSequence(CurState, ResolveState('Roll')) || InStateSequence(CurState, ResolveState('Jump')))
+		{
+			// Switch to standing from running
+			SetState(SpawnState);
+		}
+		else
+		{
+			Super.PlayIdle();
+		}
+	}
+	override void PlayRunning ()
+	{
+		if (IsRunning() && (InStateSequence(CurState, SpawnState) || InStateSequence(CurState, SeeState) || InStateSequence(CurState, ResolveState('Roll'))))
+		{
+			// Switch to running from standing or walking
+			SetState(ResolveState('Run'));
+		}
+		else if (!IsRunning() && (InStateSequence(CurState, ResolveState('Run')) || InStateSequence(CurState, ResolveState('Roll'))))
+		{
+			// Switch to walking from running
+			SetState(SeeState);
+		}
+		else if (!IsWalking() && (InStateSequence(CurState, ResolveState('Walk')) || InStateSequence(CurState, ResolveState('Run'))))
+		{
+			// Switch to walking from running
+			SetState(SpawnState);
+		}
+		else
+		{
+			// Base class behavior (switches to walking from standing)
+			Super.PlayRunning();
+		}
+	}
+	private bool IsRunning()
+	{
+		return player != null && ((vel.Length() >= 12));
+	}
+	private bool IsWalking()
+	{
+		return player != null && ((vel.Length() > 0));
+	}
+	Default
+	{
+		Player.DisplayName "SRB2 Player Template";
+		Player.CrouchSprite "";
+		CameraFOV 120;
+		+NOSKIN
+	}
+}

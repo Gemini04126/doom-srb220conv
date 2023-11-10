@@ -1,0 +1,5 @@
+version "4.11"
+
+#include "ZScript/Template.zsc"	// Template player class
+#include "ZScript/Sonic.zsc"	// Sonic player class
+#include "ZScript/Tails.zsc"	// Tails player class

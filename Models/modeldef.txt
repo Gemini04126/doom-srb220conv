@@ -1,0 +1,48 @@
+Model BlueCrawla
+{
+	Path "MD2"
+	Skin 0 "POSS.png"
+	Model 0 "POSS.md2"
+	Scale 3.0 3.0 3.0
+	Frame POSS A 1 0
+	Frame POSS B 1 0
+	Frame POSS C 1 0
+	Frame POSS D 1 0
+	Frame POSS E 1 0
+	Frame POSS F 1 0
+	Frame POSS G 1 0
+	Frame POSS H 1 0
+	Frame POSS I 1 0
+	Frame POSS J 1 0
+	Frame POSS K 1 0
+	Frame POSS L 1 0
+	Frame POSS M 1 0
+	Frame POSS N 1 0
+	Frame POSS O 1 0
+	Frame POSS P 1 0
+	Frame POSS Q 1 0
+}
+Model RedCrawla
+{
+	Path "MD2"
+	Skin 0 "SPOS.png"
+	Model 0 "SPOS.md2"
+	Scale 3.0 3.0 3.0
+	Frame SPOS A 1 0
+	Frame SPOS B 1 0
+	Frame SPOS C 1 0
+	Frame SPOS D 1 0
+	Frame SPOS E 1 0
+	Frame SPOS F 1 0
+	Frame SPOS G 1 0
+	Frame SPOS H 1 0
+	Frame SPOS I 1 0
+	Frame SPOS J 1 0
+	Frame SPOS K 1 0
+	Frame SPOS L 1 0
+	Frame SPOS M 1 0
+	Frame SPOS N 1 0
+	Frame SPOS O 1 0
+	Frame SPOS P 1 0
+	Frame SPOS Q 1 0
+}

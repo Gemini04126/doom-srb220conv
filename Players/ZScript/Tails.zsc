@@ -1,0 +1,86 @@
+class SRB2TailsPlayer : SRB2PlayerTemplate
+{
+	Default
+	{
+		Speed 1.25;
+		Player.DisplayName "Tails";
+		Player.JumpZ 12;
+		// Sorry, but you should make a new character class...
+		// Unfortunately, due to SRB2's strange naming conventions,
+		// you have to copy *all of this*.
+	}
+	States
+	{
+		Spawn:
+			TAI0 A 105;
+			Goto Tap;
+		Tap:
+			TAI0 BC 16;
+			Loop;
+		See:
+		Walk:
+			TAI0 DEFGHIJK 4;
+			Loop;
+		Jump: // either put this above Roll or Spring
+		Roll:
+			TAI0 LMNO 1;
+			Loop;
+		Spring:
+			TAI0 P -1;
+			Loop;
+		Run:
+			TAI0 QRST 2;
+			Loop;
+		Ability:
+			TAI0 UV 2;
+			Loop;
+		Special:
+			TAI0 WXYZ 6;
+			Loop;
+		ClimbStop:
+			TAI0 W -1;
+			Loop;
+		Climb:
+			TAI0 XYZY 5;
+			Loop;
+		Gasp:
+			TAI0 [ 14;
+			Goto Walk;
+		Pain:
+			TAI0 \ -1;
+			Goto Spawn;
+		Death:
+			TAI0 ] 8 A_Fall;
+			TAI0 ] 7;
+			TAI0 ] -1;
+			Loop;
+		Teeter:
+			TAI1 AB 12;
+			Loop;
+		Fall:
+			TAI1 CD 2;
+			Loop;
+		Ride:
+			TAI1 E -1;
+			Loop;
+		SuperStand:
+			TAI0 U -1;
+			Loop;
+		SuperWalk:
+			TAI0 UV 7;
+			Loop;
+		SuperFly:
+			TAI0 WX 7;
+			Loop;
+		SuperTeeter:
+			TAI0 Y 12;
+			Loop;
+		SuperPain:
+			TAI0 Z -1;
+			Loop;
+		Melee:
+		Missile:
+			TAI0 X 8;
+			Goto Spawn;
+	}
+}

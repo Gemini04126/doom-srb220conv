@@ -1,0 +1,4 @@
+GameInfo
+{
+	AddPlayerClasses = "SRB2SonicPlayer", "SRB2TailsPlayer"
+}

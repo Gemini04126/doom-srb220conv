@@ -168,6 +168,8 @@ class THZSteam : Actor
 	override void Touch(Actor toucher)
 	{
 		toucher.Vel.Z = self.Speed;
+		if (toucher.FindState("Spring"))
+			toucher.SetStateLabel("Spring");
 	}
 	Default
 	{
