@@ -1,9 +1,9 @@
 GameInfo
 {
-	BorderFlat = "FLOOR0_3"
+	BorderFlat = "GFZFLR01"
 	ForceTextInMenus = true
-	TitleMusic = "D_TITLES"
-	IntermissionMusic = "D_LCLEAR"
+	TitleMusic = "O_TITLES"
+	IntermissionMusic = "O_LCLEAR"
 	MenuFontColor_Title = "UNTRANSLATED"
 
 	QuitMessages = "Eggman's tied explosives\nto your girlfriend, and\nwill activate them if\nyou press the 'Y' key!\nPress 'N' to save her!",
