@@ -1,0 +1,955 @@
+#Config File for SRB2 2.0
+
+Level 1
+Levelname = GREENFLOWER
+Act = 1
+MusicSlot = 1
+NextLevel = 2
+TypeOfLevel = 4099
+SkyNum = 1
+TimeAttack = 1
+LevelSelect = 1
+
+Level 2
+Levelname = GREENFLOWER
+Act = 2
+MusicSlot = 2
+NextLevel = 3
+TypeOfLevel = 4099
+SkyNum = 1
+TimeAttack = 1
+LevelSelect = 1
+
+Level 3
+Levelname = GREENFLOWER
+Act = 3
+MusicSlot = 3
+NextLevel = 4
+TypeOfLevel = 4097
+SkyNum = 1
+NoPerfectBonus = 1
+TimeAttack = 1
+LevelSelect = 1
+
+Level 4
+Levelname = TECHNO HILL
+Act = 1
+MusicSlot = 4
+NextLevel = 5
+TypeOfLevel = 4099
+SkyNum = 4
+TimeAttack = 1
+LevelSelect = 1
+
+Level 5
+Levelname = TECHNO HILL
+Act = 2
+MusicSlot = 5
+NextLevel = 6
+TypeOfLevel = 4099
+SkyNum = 4
+TimeAttack = 1
+LevelSelect = 1
+
+Level 6
+Levelname = TECHNO HILL
+Act = 3
+MusicSlot = 3
+NextLevel = 7
+TypeOfLevel = 4097
+SkyNum = 4
+NoPerfectBonus = 1
+TimeAttack = 1
+LevelSelect = 1
+
+Level 7
+Levelname = DEEP SEA
+Act = 1
+MusicSlot = 7
+NextLevel = 8
+TypeOfLevel = 4099
+Weather = 0
+SkyNum = 7
+TimeAttack = 1
+LevelSelect = 1
+
+Level 8
+Levelname = DEEP SEA
+Act = 2
+MusicSlot = 8
+NextLevel = 9
+TypeOfLevel = 4099
+Weather = 0
+SkyNum = 7
+TimeAttack = 1
+LevelSelect = 1
+
+Level 9
+Levelname = DEEP SEA
+Act = 3
+MusicSlot = 3
+NextLevel = 10
+TypeOfLevel = 4097
+SkyNum = 1
+NoPerfectBonus = 1
+TimeAttack = 1
+LevelSelect = 1
+
+Level 10
+Levelname = CASTLE EGGMAN
+Act = 1
+MusicSlot = 10
+NextLevel = 11
+TypeOfLevel = 4099
+Weather = 1
+SkyNum = 10
+TimeAttack = 1
+LevelSelect = 1
+
+Level 11
+Levelname = CASTLE EGGMAN
+Act = 2
+MusicSlot = 11
+NextLevel = 13
+TypeOfLevel = 4099
+Weather = 1
+SkyNum = 11
+TimeAttack = 1
+LevelSelect = 1
+
+#Level 12
+#Levelname = CASTLE EGGMAN
+#Act = 3
+#MusicSlot = 3
+#NextLevel = 13
+#TypeOfLevel = 4097
+#SkyNum = 11
+#NoPerfectBonus = 1
+#TimeAttack = 1
+#LevelSelect = 1
+
+Level 13
+Levelname = ARID CANYON
+Act = 1
+MusicSlot = 13
+NextLevel = 16
+TypeOfLevel = 4099
+Weather = 0
+SkyNum = 13
+TimeAttack = 1
+LevelSelect = 1
+
+#Level 14
+#Levelname = ARID CANYON
+#Act = 2
+#MusicSlot = 14
+#NextLevel = 15
+#TypeOfLevel = 4099
+#Weather = 0
+#SkyNum = 13
+#TimeAttack = 1
+#LevelSelect = 1
+
+#Level 15
+#Levelname = ARID CANYON
+#Act = 3
+#MusicSlot = 3
+#NextLevel = 16
+#TypeOfLevel = 4097
+#Weather = 0
+#SkyNum = 13
+#NoPerfectBonus = 1
+#TimeAttack = 1
+#LevelSelect = 1
+
+Level 16
+Levelname = RED VOLCANO
+Act = 1
+MusicSlot = 16
+NextLevel = 22
+TypeOfLevel = 4099
+Weather = 0
+SkyNum = 1
+TimeAttack = 1
+LevelSelect = 1
+
+Level 17
+Levelname = BLUE MOUNTAIN
+Act = 2
+MusicSlot = 140
+NextLevel = 22
+TypeOfLevel = 4099
+Weather = 2
+SkyNum = 17
+NoPerfectBonus = 1
+TimeAttack = 0
+Hidden = 1
+LevelSelect = 0
+
+#Level 18
+#Levelname = RED VOLCANO
+#Act = 3
+#MusicSlot = 3
+#NextLevel = 19
+#TypeOfLevel = 4097
+#Weather = 0
+#SkyNum = 1
+#NoPerfectBonus = 1
+#TimeAttack = 1
+#LevelSelect = 1
+
+#Level 19
+#Levelname = DARK CITY
+#Act = 1
+#MusicSlot = 19
+#NextLevel = 20
+#TypeOfLevel = 4097
+#Weather = 0
+#SkyNum = 19
+#TimeAttack = 1
+#LevelSelect = 1
+
+#Level 20
+#Levelname = DARK CITY
+#Act = 2
+#MusicSlot = 20
+#NextLevel = 21
+#TypeOfLevel = 4097
+#Weather = 0
+#SkyNum = 19
+#NoPerfectBonus = 1
+#TimeAttack = 1
+#LevelSelect = 1
+
+#Level 21
+#Levelname = DOOM SHIP
+#Act = 1
+#MusicSlot = 21
+#NextLevel = 22
+#TypeOfLevel = 4099
+#Weather = 0
+#SkyNum = 21
+#TimeAttack = 1
+#LevelSelect = 1
+
+Level 22
+Levelname = EGG ROCK
+Act = 1
+MusicSlot = 22
+NextLevel = 23
+TypeOfLevel = 4099
+Weather = 0
+SkyNum = 22
+TimeAttack = 1
+LevelSelect = 1
+
+Level 23
+Levelname = EGG ROCK
+Act = 2
+MusicSlot = 23
+NextLevel = 24
+TypeOfLevel = 4099
+Weather = 0
+SkyNum = 22
+TimeAttack = 1
+LevelSelect = 1
+
+Level 24
+Levelname = EGG ROCK
+Act = 3
+MusicSlot = 26
+NextLevel = 1102
+TypeOfLevel = 6145
+Weather = 0
+SkyNum = 22
+NoPerfectBonus = 1
+TimeAttack = 1
+LevelSelect = 1
+
+#Level 25
+#Levelname = FINAL FIGHT
+#Act = 0
+#MusicSlot = 25
+#NextLevel = 1102
+#TypeOfLevel = 4097
+#Weather = 0
+#NoPerfectBonus = 1
+#SkyNum = 25
+#LevelSelect = 1
+
+Level 29
+Levelname = SPRING HILL
+Act = 0
+MusicSlot = 29
+NextLevel = 1101
+Hidden = 1
+TypeOfLevel = 4160
+SkyNum = 29
+
+Level 30
+Levelname = MARIO KOOPA BLAST
+Act = 1
+MusicSlot = 30
+NextLevel = 31
+Hidden = 1
+TypeOfLevel = 4353
+SkyNum = 30
+
+Level 31
+Levelname = MARIO KOOPA BLAST
+Act = 2
+MusicSlot = 31
+NextLevel = 32
+Hidden = 1
+TypeOfLevel = 4865
+SkyNum = 30
+
+Level 32
+Levelname = MARIO KOOPA BLAST
+Act = 3
+MusicSlot = 32
+NextLevel = 1101
+Hidden = 1
+TypeOfLevel = 4865
+SkyNum = 30
+
+Level 40
+Levelname = NEO AERIAL GARDEN
+Subtitle = HYPER LEVEL
+Act = 0
+Hidden = 1
+MusicSlot = 142
+NextLevel = 13
+TypeOfLevel = 4099
+SkyNum = 1
+
+Level 50
+MusicSlot = 50
+TypeOfLevel = 4097
+SkyNum = 50
+NoPerfectBonus = 1
+
+Level 51
+MusicSlot = 50
+TypeOfLevel = 4097
+SkyNum = 51
+NoPerfectBonus = 1
+
+Level 52
+MusicSlot = 50
+TypeOfLevel = 4097
+SkyNum = 52
+NoPerfectBonus = 1
+
+Level 53
+MusicSlot = 50
+TypeOfLevel = 4097
+SkyNum = 53
+NoPerfectBonus = 1
+
+Level 54
+MusicSlot = 50
+TypeOfLevel = 4097
+SkyNum = 54
+NoPerfectBonus = 1
+
+Level 55
+MusicSlot = 50
+TypeOfLevel = 4097
+SkyNum = 55
+NoPerfectBonus = 1
+
+Level 56
+MusicSlot = 50
+TypeOfLevel = 4097
+SkyNum = 56
+NoPerfectBonus = 1
+
+Level 57
+MusicSlot = 50
+TypeOfLevel = 4097
+Skynum = 57
+NoPerfectBonus = 1
+
+Level 70
+Levelname = BURNING SANDS
+Act = 0
+MusicSlot = 139
+NextLevel = 71
+TypeOfLevel = 2
+Weather = 0
+SkyNum = 21
+
+Level 71
+Levelname = RACE ALLEY
+Act = 0
+MusicSlot = 5
+NextLevel = 72
+TypeOfLevel = 2
+Weather = 0
+SkyNum = 54
+
+Level 72
+Levelname = EMERALD COAST
+Act = 0
+MusicSlot = 136
+NextLevel = 73
+TypeOfLevel = 2
+Weather = 0
+SkyNum = 1
+
+Level 73
+Levelname = TOXIC CITADEL
+Act = 0
+MusicSlot = 11
+NextLevel = 74
+TypeOfLevel = 2
+Weather = 1
+SkyNum = 8
+
+Level 74
+Levelname = FROZEN NIGHT
+Act = 0
+MusicSlot = 140
+NextLevel = 75
+TypeOfLevel = 2
+Weather = 2
+SkyNum = 8
+
+Level 75
+Levelname = METALLIC HALL
+Act = 0
+MusicSlot = 5
+NextLevel = 76
+TypeOfLevel = 2
+Weather = 0
+SkyNum = 4
+
+Level 76
+Levelname = HEAVEN PASS
+Act = 0
+MusicSlot = 142
+NextLevel = 77
+TypeOfLevel = 2
+Weather = 0
+SkyNum = 1
+
+Level 77
+LevelName = WARPED WOODS
+Act = 0
+MusicSlot = 138
+NextLevel = 78
+TypeOfLevel = 2
+Weather = 0
+SkyNum = 64
+
+Level 78
+Levelname = CORRUPT SHRINE
+Act = 0
+MusicSlot = 7
+NextLevel = 79
+TypeOfLevel = 2
+Weather = 0
+SkyNum = 7
+
+Level 79
+Levelname = SLUMBER CIRCUIT
+Act = 0
+MusicSlot = 50
+NextLevel = 70
+TypeOfLevel = 66
+Weather = 0
+SkyNum = 50
+
+Level 80
+Levelname = LIME FOREST
+Act = 0
+MusicSlot = 1
+NextLevel = 81
+TypeOfLevel = 16
+Weather = 0
+SkyNum = 1
+
+Level 81
+Levelname = CLOUD PALACE
+Act = 0
+MusicSlot = 142
+NextLevel = 82
+TypeOfLevel = 16
+Weather = 0
+SkyNum = 1
+
+Level 82
+Levelname = SILVER CASCADE
+Act = 0
+MusicSlot = 93
+NextLevel = 83
+TypeOfLevel = 16
+Weather = 3
+SkyNum = 11
+
+Level 83
+Levelname = ICICLE FALLS
+Act = 0
+MusicSlot = 140
+NextLevel = 84
+TypeOfLevel = 16
+Weather = 0
+Skynum = 55
+
+Level 84
+LevelName = TWISTED TERMINAL
+Act = 0
+MusicSlot = 23
+NextLevel = 85
+TypeOfLevel = 16
+Weather = 0
+SkyNum = 22
+
+Level 85
+Levelname = NIMBUS RUINS
+Act = 0
+MusicSlot = 91
+NextLevel = 80
+TypeOfLevel = 16
+Weather = 0
+SkyNum = 1
+
+Level 90
+Levelname = JADE VALLEY
+Act = 0
+MusicSlot = 92
+NextLevel = 91
+TypeOfLevel = 12
+Weather = 0
+SkyNum = 1
+
+Level 91
+Levelname = NOXIOUS FACTORY
+Act = 0
+MusicSlot = 4
+NextLevel = 92
+TypeOfLevel = 12
+Weather = 0
+SkyNum = 4
+
+LEVEL 92
+Levelname = TIDAL PALACE
+Act = 0
+MusicSlot = 8
+NextLevel = 93
+TypeOfLevel = 12
+Weather = 0
+SkyNum = 7
+
+Level 93
+Levelname = THUNDER CITADEL
+Act = 0
+MusicSlot = 11
+NextLevel = 94
+TypeOfLevel = 12
+Weather = 1
+SkyNum = 10
+
+LEVEL 94
+Levelname = DESOLATE TWILIGHT
+Act = 0
+MusicSlot = 95
+NextLevel = 95
+TypeOfLevel = 12
+Weather = 0
+SkyNum = 21
+
+LEVEL 95
+Levelname = INFERNAL CAVERN
+Act = 0
+MusicSlot = 18
+NextLevel = 96
+TypeOfLevel = 12
+Weather = 0
+SkyNum = 7
+
+Level 96
+Levelname = FROST COLUMNS
+Act = 0
+MusicSlot = 93
+NextLevel = 98
+TypeOfLevel = 12
+Weather = 2
+SkyNum = 11
+
+Level 98
+Levelname = SAPPHIRE FALLS
+Act = 0
+MusicSlot = 45
+NextLevel = 99
+TypeOfLevel = 12
+Weather = 0
+SkyNum = 1
+
+Level 99
+Levelname = MEADOW MATCH
+Act = 0
+MusicSlot = 90
+NextLevel = 90
+TypeOfLevel = 12
+Weather = 0
+SkyNum = 1
+
+LEVEL 101
+LEVELNAME = KNOTHOLE BASE
+ACT = 1
+NEXTLEVEL = 102
+MUSICSLOT = 109
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 102
+LEVELNAME = KNOTHOLE BASE
+ACT = 2
+NEXTLEVEL = 103
+MUSICSLOT = 109
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 103
+LEVELNAME = GREAT FOREST
+ACT = 1
+NEXTLEVEL = 104
+MUSICSLOT = 110
+WEATHER = 0
+SKYNUM = 103
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 104
+LEVELNAME = GREAT FOREST
+ACT = 2
+NEXTLEVEL = 105
+MUSICSLOT = 110
+WEATHER = 0
+SKYNUM = 103
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 105
+LEVELNAME = LAKE
+ACT = 1
+NEXTLEVEL = 106
+MUSICSLOT = 111
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 106
+LEVELNAME = LAKE
+ACT = 2
+NEXTLEVEL = 107
+MUSICSLOT = 111
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 107
+LEVELNAME = ICE PALACE
+ACT = 1
+NEXTLEVEL = 108
+MUSICSLOT = 112
+WEATHER = 0
+SKYNUM = 107
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 108
+LEVELNAME = ICE PALACE
+ACT = 2
+NEXTLEVEL = 109
+MUSICSLOT = 113
+WEATHER = 0
+SKYNUM = 107
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 109
+LEVELNAME = VOLCANO
+ACT = 1
+NEXTLEVEL = 110
+MUSICSLOT = 114
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 110
+LEVELNAME = VOLCANO
+ACT = 2
+NEXTLEVEL = 111
+MUSICSLOT = 114
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 111
+LEVELNAME = ECHIDNAPOLIS
+ACT = 1
+NEXTLEVEL = 112
+MUSICSLOT = 115
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 2
+
+LEVEL 112
+LEVELNAME = ECHIDNAPOLIS
+ACT = 2
+NEXTLEVEL = 113
+MUSICSLOT = 115
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 2
+
+LEVEL 113
+LEVELNAME = SKY LAB
+ACT = 1
+NEXTLEVEL = 114
+MUSICSLOT = 116
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 2
+
+LEVEL 114
+LEVELNAME = SKY LAB
+ACT = 2
+NEXTLEVEL = 115
+MUSICSLOT = 116
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 2
+
+LEVEL 115
+LEVELNAME = MECHANICAL MADNESS
+ACT = 1
+NEXTLEVEL = 116
+MUSICSLOT = 117
+WEATHER = 0
+SKYNUM = 21
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 116
+LEVELNAME = MECHANICAL MADNESS
+ACT = 2
+NEXTLEVEL = 117
+MUSICSLOT = 117
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 117
+LEVELNAME = ROBOTOPOLIS
+ACT = 1
+NEXTLEVEL = 118
+MUSICSLOT = 118
+WEATHER = 0
+SKYNUM = 117
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 118
+LEVELNAME = ROBOTOPOLIS
+ACT = 2
+NEXTLEVEL = 119
+MUSICSLOT = 118
+WEATHER = 0
+SKYNUM = 117
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 119
+LEVELNAME = ROBO BASE
+ACT = 1
+NEXTLEVEL = 120
+MUSICSLOT = 119
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 120
+LEVELNAME = ROBO BASE
+ACT = 2
+NEXTLEVEL = 123
+MUSICSLOT = 119
+WEATHER = 0
+SKYNUM = 1
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+#LEVEL 121
+#LEVELNAME = SPACE CHASE
+#ACT = 1
+#NEXTLEVEL = 122
+#MUSICSLOT = 120
+#WEATHER = 0
+#SKYNUM = 21
+#LEVELSELECT = 1
+#TYPEOFLEVEL = 12801
+#FORCECHARACTER = 0
+
+#LEVEL 122
+#LEVELNAME = SPACE CHASE
+#ACT = 2
+#NEXTLEVEL = 123
+#MUSICSLOT = 121
+#WEATHER = 0
+#SKYNUM = 21
+#LEVELSELECT = 1
+#TYPEOFLEVEL = 12801
+#FORCECHARACTER = 0
+
+LEVEL 123
+LEVELNAME = RINGSATELLITE
+ACT = 1
+NEXTLEVEL = 124
+MUSICSLOT = 122
+WEATHER = 0
+SKYNUM = 22
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 124
+LEVELNAME = RINGSATELLITE
+ACT = 2
+NEXTLEVEL = 127
+MUSICSLOT = 123
+WEATHER = 0
+SKYNUM = 22
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+#LEVEL 125
+#LEVELNAME = LIFT
+#ACT = 0
+#NEXTLEVEL = 126
+#MUSICSLOT = 124
+#WEATHER = 0
+#SKYNUM = 1
+#LEVELSELECT = 1
+#TYPEOFLEVEL = 12801
+#FORCECHARACTER = 0
+
+#LEVEL 126
+#LEVELNAME = LAST LAND
+#ACT = 0
+#NEXTLEVEL = 1102
+#MUSICSLOT = 125
+#WEATHER = 0
+#SKYNUM = 1
+#LEVELSELECT = 1
+#TYPEOFLEVEL = 12801
+#FORCECHARACTER = 0
+
+LEVEL 127
+LEVELNAME = ATHENOS
+Subtitle = SUPER LEVEL 1
+ACT = 0
+NEXTLEVEL = 128
+MUSICSLOT = 126
+WEATHER = 0
+SKYNUM = 127
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 128
+LEVELNAME = GREAT UNKNOWN
+Subtitle = SUPER LEVEL 2
+ACT = 0
+NEXTLEVEL = 129
+MUSICSLOT = 127
+WEATHER = 0
+SKYNUM = 13
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 129
+LEVELNAME = VOID
+Subtitle = SUPER LEVEL 3
+ACT = 0
+NEXTLEVEL = 130
+MUSICSLOT = 128
+WEATHER = 0
+SKYNUM = 66
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 130
+LEVELNAME = WOODLAND HILL
+Subtitle = HYPER LEVEL 1
+ACT = 0
+NEXTLEVEL = 131
+MUSICSLOT = 129
+WEATHER = 0
+SKYNUM = 103
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 131
+LEVELNAME = ROCKY MOUNTAIN
+Subtitle = HYPER LEVEL 2
+ACT = 0
+NEXTLEVEL = 132
+MUSICSLOT = 130
+WEATHER = 0
+SKYNUM = 29
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0
+
+LEVEL 132
+LEVELNAME = HIDDEN PALACE
+Subtitle = HYPER LEVEL 3
+ACT = 0
+NEXTLEVEL = 1102
+MUSICSLOT = 131
+WEATHER = 0
+SKYNUM = 132
+LEVELSELECT = 1
+TYPEOFLEVEL = 12803
+FORCECHARACTER = 0

@@ -6,13 +6,13 @@ class Ring : HealthBonus
 		+NOGRAVITY -MOVEWITHSECTOR +NOLIFTDROP +NOCLIP
 		Inventory.MaxAmount 9999;
 		Inventory.PickupMessage "";
-		Inventory.Icon "BON1A0";
+		Inventory.Icon "RINGA0";
 		Inventory.PickupFlash "RingSparkle";
 	}
 	States
 	{
 		Spawn:
-			BON1 ABCDEFGHIJKLMNOPQRSTUVWX 1;
+			RING ABCDEFGHIJKLMNOPQRSTUVWX 1;
 			Loop;
 	}
 }
@@ -26,3 +26,6 @@ class RingSparkle : PickupFlash
 			Stop;
 	}
 }
+
+// mario coin = COIN
+// coin spark = CPRK

@@ -1,43 +1,53 @@
 DoomEdNums
 {
 	// GFZ enemies
-	3004 = BlueCrawla
-	9 = RedCrawla
-	58 = StupidDumbUnnamedRoboFish // actual name
+	100 = BlueCrawla
+	101 = RedCrawla
+	102 = StupidDumbUnnamedRoboFish // actual name
 
 	// THZ enemies
-	5005 = GoldBuzz
+	103 = GoldBuzz
+	104 = RedBuzz
 
 	// Monitors
-	2011 = SuperRingMonitor
-	2012 = SilverRingMonitor
-	41 = ExtraLifeMonitor
-	48 = RingShieldMonitor
-	2028 = WaterShieldMonitor
-	2018 = BombShieldMonitor
-	2022 = InvincibilityMonitor
+	400 = SuperRingMonitor
+	402 = AttractionShieldMonitor
+	403 = ForceShieldMonitor
+	404 = AtomicShieldMonitor
+	405 = WhirlwindShieldMonitor
+	406 = ElementalShieldMonitor
+	407 = SuperSneakersMonitor
+	408 = InvincibilityMonitor
+	409 = ExtraLifeMonitor
+//	410 = EggmanMonitor
+//	411 = TeleportMonitor
+//	412 = RandomMonitor
+//	413 = GravityMonitor
+//	414 = RedRingMonitor
+//	415 = BlueRingMonitor
+//	416 = RecycleMonitor
 
 	// Various map objects
-	2014 = Ring
-	3006 = Starpost
-	86 = Signpost
-	28 = YellowUpSpring
-	79 = RedUpSpring
-	5004 = BlueUpSpring
-	2015 = YellowDiagUpSpring
-	38 = RedDiagUpSpring
-	20 = YellowDiagDownSpring
-	39 = RedDiagDownSpring
-	65 = YellowDownSpring
-	66 = RedDownSpring
-	30 = THZSteam
+	300 = Ring
+	501 = Signpost
+	502 = Starpost
+	541 = THZSteam
+	550 = YellowUpSpring
+	551 = RedUpSpring
+	552 = BlueUpSpring
+	553 = YellowDownSpring
+	554 = RedDownSpring
+	555 = YellowDiagUpSpring
+	556 = RedDiagUpSpring
+	557 = YellowDiagDownSpring
+	558 = RedDiagDownSpring
 
 	// GFZ scenery
-	73 = GFZPurpleFlower
-	36 = GFZOrangeFlower
-	70 = GFZBigFlower
-	75 = GFZBush
-	74 = GFZBerryBush
+	802 = GFZPurpleFlower
+	800 = GFZOrangeFlower
+	801 = GFZBigFlower
+	805 = GFZBush
+	804 = GFZBerryBush
 	// THZ scenery
-	2035 = THZSteamFlower
+	900 = THZSteamFlower
 }

@@ -2,7 +2,6 @@ adddefaultmap
 {
 	Gravity = 400
 	AirControl = 0.33
-	translator = SRB2XLAT
 }
 
 // GFZ
@@ -45,35 +44,62 @@ map MAP06 "Techno Hill Zone Act 3"
 	Next = MAP07
 }
 
-// CEZ
+// DSZ
 // Add rain here! Look at Eviternity or something.
-map MAP07 "Castle Eggman Zone Act 1"
+map MAP07 "Deep Sea Zone Act 1"
 {
 	Music = "O_MAP07M"
 	Sky1 = "SKY7"
 	Next = MAP08
 }
-map MAP08 "Castle Eggman Zone Act 2"
+map MAP08 "Deep Sea Zone Act 2"
 {
 	Music = "O_MAP08M"
 	Sky1 = "SKY7"
 	Next = MAP09
 }
-map MAP09 "Castle Eggman Zone Act 3"
+map MAP09 "Deep Sea Zone Act 3"
 {
 	Music = "O_MAP09M"
 	Sky1 = "SKY7"
-	Next = MAP16
+	Next = MAP10
 }
 
-// Extra levels
+// CEZ
+// Add rain here! Look at Eviternity or something.
+map MAP10 "Castle Eggman Zone Act 1"
+{
+	Music = "O_MAP10M"
+	Sky1 = "SKY7"
+	Next = MAP11
+}
+map MAP11 "Castle Eggman Zone Act 2"
+{
+	Music = "O_MAP11M"
+	Sky1 = "SKY7"
+	Next = MAP12
+}
+map MAP12 "Castle Eggman Zone Act 3"
+{
+	Music = "O_MAP12M"
+	Sky1 = "SKY7"
+	Next = MAP13
+}
+
+map MAP13 "Arid Canyon Zone Act 1"
+{
+	Music = "O_MAP13M"
+	Sky1 = "SKY1"
+	Next = MAP16
+}
 map MAP16 "Red Volcano Zone Act 1"
 {
 	Music = "O_MAP16M"
 	Sky1 = "SKY1"
 	Next = MAP29
 }
-
+// havent changed from 1094 yet past here
+// Extra levels
 map MAP29 "Spring Hill Zone"
 {
 	Music = "O_MAP29M"

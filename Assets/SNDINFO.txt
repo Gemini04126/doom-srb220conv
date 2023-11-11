@@ -1,8 +1,0 @@
-sfx/pop		DSPOP
-sfx/strpst	DSSTRPST
-sfx/shield	DSSHIELD
-sfx/spring	DSSPRING
-sfx/lvpass	DSLVPASS
-sfx/steam1	DSSTEAM1
-sfx/steam2	DSSTEAM2
-sfx/1up		"Music/O_XTLIFE.ogg"	// mostly just here for temporary reasons.

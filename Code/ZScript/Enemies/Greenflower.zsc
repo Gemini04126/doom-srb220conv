@@ -18,7 +18,7 @@ class BlueCrawla : SRB2EnemyTemplate
 			POSS A 5 A_Look;
 			Loop;
 		See:
-			POSS ABCDEFGHIJKLMNOPQ 3 A_Chase;
+			POSS ABCDEF 3 A_Chase;
 			Loop;
 	}
 }
@@ -43,7 +43,7 @@ class RedCrawla : SRB2EnemyTemplate
 			SPOS A 5 A_Look;
 			Loop;
 		See:
-			SPOS ABCDEFGHIJKLMNOPQ 1 A_Chase;
+			SPOS ABCDEF 1 A_Chase;
 			Loop;
 	}
 }

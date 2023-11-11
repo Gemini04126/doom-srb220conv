@@ -106,3 +106,21 @@ class GoldBuzz : SRB2EnemyTemplate
 			Loop;
 	}
 }
+
+class RedBuzz : GoldBuzz
+{
+	Default
+	{
+		Tag "Red Buzz";
+	}
+	States
+	{
+		Spawn:
+			RBUZ AB 2 A_Look;
+			Loop;
+		See:
+//			RBUZ AB 2 A_BuzzFly;
+			RBUZ AB 2 A_Chase;
+			Loop;
+	}
+}
