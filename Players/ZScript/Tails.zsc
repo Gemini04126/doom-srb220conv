@@ -21,7 +21,9 @@ class SRB2TailsPlayer : SRB2PlayerTemplate
 		Walk:
 			TAI0 DEFGHIJK 4;
 			Loop;
-		Jump: // either put this above Roll or Spring
+		Jump: // copy Roll or Spring for this. we're using it for a character ability in Tick().
+			TAI0 LMNO 1;
+			Loop;
 		Roll:
 			TAI0 LMNO 1;
 			Loop;

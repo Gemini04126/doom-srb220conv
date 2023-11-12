@@ -59,7 +59,7 @@ class SRB2PlayerTemplate : DoomPlayer
 	}
 	private bool IsRunning()
 	{
-		return player != null && ((vel.Length() >= 12));
+		return player != null && ((vel.Length() >= 13));
 	}
 	private bool IsWalking()
 	{

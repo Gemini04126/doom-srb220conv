@@ -4,7 +4,8 @@ class SRB2KnucklesPlayer : SRB2PlayerTemplate
 	{
 		Speed 1.25;
 		Player.DisplayName "Knuckles";
-		Player.JumpZ 12;
+		Player.JumpZ 10;
+		Player.ColorRange 170, 191;
 		// Sorry, but you should make a new character class...
 		// Unfortunately, due to SRB2's strange naming conventions,
 		// you have to copy *all of this*.
@@ -21,7 +22,9 @@ class SRB2KnucklesPlayer : SRB2PlayerTemplate
 		Walk:
 			KNU0 DEFGHIJK 4;
 			Loop;
-		Jump: // either put this above Roll or Spring
+		Jump: // copy Roll or Spring for this. we're using it for a character ability in Tick().
+			KNU0 LMNO 1;
+			Loop;
 		Roll:
 			KNU0 LMNO 1;
 			Loop;
