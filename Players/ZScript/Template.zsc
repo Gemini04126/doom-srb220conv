@@ -3,6 +3,7 @@ class SRB2PlayerTemplate : DoomPlayer
 	int actionspd;
 	int mindash;
 	int maxdash;
+	bool rolling;
 	property actionspd : actionspd;
 	property mindash : mindash;
 	property maxdash : maxdash;
@@ -15,7 +16,9 @@ class SRB2PlayerTemplate : DoomPlayer
 			if (player.mo.vel.z < 0)
 				SetState(ResolveState('Fall'));
 		}
-		if ((player.JumpTics) && (player.buttons & BT_JUMP) && !(InStateSequence(CurState, ResolveState('Jump'))))
+		if (player.onGround && !(InStateSequence(CurState, ResolveState('Walk'))) && !(InStateSequence(CurState, ResolveState('Run'))) && !(InStateSequence(CurState, SpawnState)))
+			SetState(ResolveState('Spawn'));
+		if ((player.cmd.buttons & BT_JUMP) && !(player.oldbuttons & BT_JUMP) && !(InStateSequence(CurState, ResolveState('Jump'))))
 			SetState(ResolveState('Jump'));
 		Super.Tick();
 	}

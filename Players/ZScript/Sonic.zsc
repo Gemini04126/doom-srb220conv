@@ -9,7 +9,7 @@ class SRB2SonicPlayer : SRB2PlayerTemplate
 		}
 		int buttons = GetPlayerInput(AAPTR_DEFAULT, MODINPUT_BUTTONS);
 		int oldbuttons = GetPlayerInput(AAPTR_DEFAULT, MODINPUT_OLDBUTTONS);
-		if ((!self.Thokked) && (player.JumpTics) && !(player.onGround) && (player.buttons & BT_JUMP) && (InStateSequence(CurState, ResolveState('Jump'))))
+		if ((!self.Thokked) && (player.JumpTics) && !(player.onGround) && (player.cmd.buttons & BT_JUMP) && !(player.oldbuttons & BT_JUMP) && (InStateSequence(CurState, ResolveState('Jump'))))
 		{
 			A_StartSound("sfx/thok");
 			A_SpawnItemEx("Thok", flags: SXF_TRANSFERTRANSLATION);
