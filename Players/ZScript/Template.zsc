@@ -1,15 +1,23 @@
 class SRB2PlayerTemplate : DoomPlayer
 {
+	int actionspd;
+	int mindash;
+	int maxdash;
+	property actionspd : actionspd;
+	property mindash : mindash;
+	property maxdash : maxdash;
 	override void Tick()
 	{
-		Super.Tick();
+		int buttons = GetPlayerInput(AAPTR_DEFAULT, MODINPUT_BUTTONS);
+		int oldbuttons = GetPlayerInput(AAPTR_DEFAULT, MODINPUT_OLDBUTTONS);
 		if (InStateSequence(CurState, ResolveState('Spring')))
 		{
 			if (player.mo.vel.z < 0)
 				SetState(ResolveState('Fall'));
 		}
-		if ((player.JumpTics) && (player.buttons && BT_JUMP) && !(InStateSequence(CurState, ResolveState('Jump'))))
+		if ((player.JumpTics) && (player.buttons & BT_JUMP) && !(InStateSequence(CurState, ResolveState('Jump'))))
 			SetState(ResolveState('Jump'));
+		Super.Tick();
 	}
 	override void PlayIdle ()
 	{
@@ -58,7 +66,10 @@ class SRB2PlayerTemplate : DoomPlayer
 	{
 		Player.DisplayName "SRB2 Player Template";
 		Player.CrouchSprite "";
-		CameraFOV 120;
+		SRB2PlayerTemplate.actionspd 30;
+		SRB2PlayerTemplate.mindash 15;
+		SRB2PlayerTemplate.maxdash 70;
+//		CameraFOV 120;
 		+NOSKIN
 	}
 }

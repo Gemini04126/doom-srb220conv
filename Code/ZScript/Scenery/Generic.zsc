@@ -1,0 +1,17 @@
+class Thok : Actor
+{
+	Default
+	{
+		RenderStyle "Translucent";
+		Alpha 0.5;
+		+NOINTERACTION
+	}
+	States
+	{
+		Spawn:
+			THOK A 8;
+			Stop;
+	}
+} 
+class SRB2Splash : Actor
+{}

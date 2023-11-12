@@ -1,0 +1,3 @@
+sfx/thok	DSTHOK
+sfx/pop		DSPOP
+sfx/strpst	DSSTRPST

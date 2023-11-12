@@ -52,8 +52,8 @@ class StupidDumbUnnamedRoboFish : SRB2EnemyTemplate
 {
 	state A_FishJump()
 	{
-//		if ((self.pos.z <= self.floorz) || (self.pos.z <= self.watertop - (64 << FRACBITS)))
-		if ((self.pos.z <= self.floorz))
+		let t = GetFloorTerrain();
+		if ((self.pos.z <= self.floorz) || ((t.IsLiquid) && (self.pos.z == floorz-64)))
 		{
 			if (self.threshold == 0) self.threshold = 44;
 			self.vel.z = self.threshold/1;///4;	//*(FRACUNIT/4);

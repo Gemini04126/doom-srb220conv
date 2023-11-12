@@ -12,5 +12,6 @@ version "4.1.0"
 #include "ZScript/Objects/Signpost.zsc"		// Signpost
 #include "ZScript/Objects/Springs.zsc"		// Springs
 
+#include "ZScript/Scenery/Generic.zsc"		// Generic scenery/effect objects
 #include "ZScript/Scenery/Greenflower.zsc"	// GFZ scenery objects
 #include "ZScript/Scenery/Techno Hill.zsc"	// THZ scenery objects

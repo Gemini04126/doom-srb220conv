@@ -1,10 +1,29 @@
 class SRB2SonicPlayer : SRB2PlayerTemplate
 {
+	bool Thokked;
+	override void Tick()
+	{
+		if (player.OnGround)
+		{
+			self.Thokked = false;
+		}
+		int buttons = GetPlayerInput(AAPTR_DEFAULT, MODINPUT_BUTTONS);
+		int oldbuttons = GetPlayerInput(AAPTR_DEFAULT, MODINPUT_OLDBUTTONS);
+		if ((!self.Thokked) && (player.JumpTics) && !(player.onGround) && (player.buttons & BT_JUMP) && (InStateSequence(CurState, ResolveState('Jump'))))
+		{
+			A_StartSound("sfx/thok");
+			A_SpawnItemEx("Thok", flags: SXF_TRANSFERTRANSLATION);
+			self.Thokked = true;
+			VelFromAngle(self.actionspd);
+		}
+		Super.Tick();
+	}
 	Default
 	{
 		Speed 1.25;
 		Player.DisplayName "Sonic";
 		Player.JumpZ 12;
+		SRB2PlayerTemplate.actionspd 60;
 		// Sorry, but you should make a new character class...
 		// Unfortunately, due to SRB2's strange naming conventions,
 		// you have to copy *all of this*.
@@ -21,7 +40,9 @@ class SRB2SonicPlayer : SRB2PlayerTemplate
 		Walk:
 			SON0 DEFGHIJK 4;
 			Loop;
-		Jump: // either put this above Roll or Spring
+		Jump: // copy Roll or Spring for this. we're using it for a character ability in Tick().
+			SON0 LMNO 1;
+			Loop;
 		Roll:
 			SON0 LMNO 1;
 			Loop;
