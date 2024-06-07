@@ -20,15 +20,15 @@ maps
 			resource0
 			{
 				type = 0;
-				location = "D:\\Old Game Things\\SRB2\\Other Versions\\SRB2 2.0.7\\srb2.srb";
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
 				requiredarchives = "";
 			}
 		}
-		viewpositiony = 336.5604f;
-		viewpositionx = 3121.078f;
+		viewpositiony = 47.88f;
+		viewpositionx = 2873.678f;
 		
 		testprecommand
 		{
@@ -48,11 +48,11 @@ maps
 			gridrotate = 0;
 			backscalex = 100;
 			gridoriginx = 0;
-			gridsize = 128;
+			gridsize = 16;
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 0.3000274f;
+		viewscale = 2.447415f;
 		
 		reloadresourceprecommand
 		{
@@ -62,29 +62,6 @@ maps
 		}
 		defaulttoptexture = "GFZGRASS";
 		overridebottomtexture = false;
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				returnflag = 3;
-				specialstagepit = 3;
-				exit = 3;
-				doublestepup = 3;
-				lightalpha = 0;
-			}
-			
-			linedef
-			{
-				midpeg = 3;
-			}
-			
-			thing
-			{
-				stringarg0 = 2;
-			}
-		}
 		defaultbottomtexture = "GFZGRASS";
 		defaultfloortexture = "GFZFLR02";
 		overrideceilheight = false;
@@ -106,6 +83,134 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sector
+			{
+				exit = 3;
+				specialstagepit = 3;
+				returnflag = 3;
+				doublestepup = 3;
+				lightalpha = 0;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
+			}
+		}
+	}
+	
+	MAP02
+	{
+		viewpositiony = 1728f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "GFZFLR02";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 7648f;
+		overridemiddletexture = false;
+		viewscale = 1.100206f;
+		defaulttoptexture = "GFZGRASS";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GFZGRASS";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "GFZFLR01";
+		defaultbottomtexture = "GFZGRASS";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+				noclimb = 3;
+			}
+			
+			sector
+			{
+				doublestepup = 3;
+				lightalpha = 0;
+				exit = 3;
+				specialstagepit = 3;
+				returnflag = 3;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
+			}
 		}
 	}
 }
