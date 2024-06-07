@@ -45,7 +45,6 @@ map MAP06 "Techno Hill Zone Act 3"
 }
 
 // DSZ
-// Add rain here! Look at Eviternity or something.
 map MAP07 "Deep Sea Zone Act 1"
 {
 	Music = "O_MAP07M"
@@ -86,18 +85,48 @@ map MAP12 "Castle Eggman Zone Act 3"
 	Next = MAP13
 }
 
+// ACZ (1 act)
 map MAP13 "Arid Canyon Zone Act 1"
 {
 	Music = "O_MAP13M"
 	Sky1 = "SKY1"
 	Next = MAP16
 }
+
+// RVZ
 map MAP16 "Red Volcano Zone Act 1"
 {
 	Music = "O_MAP16M"
 	Sky1 = "SKY1"
+	Next = MAP17
+}
+map MAP17 "Blue Mountain Zone Act 2" // Does BMZ have a signpost? Check later. Also, snow, just like I was originally going to do for Christmas Hunt.
+{
+	Music = "O_MAPB4M"
+	Sky1 = "SKY17"
+	Next = MAP22
+}
+
+// ERZ
+map MAP22 "Egg Rock Zone Act 1" // I sincerely hope that UDMF has reverse gravity... I doubt it, though.
+{
+	Music = "O_MAP22M"
+	Sky1 = "SKY22"
+	Next = MAP23
+}
+map MAP23 "Egg Rock Zone Act 2"
+{
+	Music = "O_MAP23M"
+	Sky1 = "SKY22"
+	Next = MAP24
+}
+map MAP24 "Egg Rock Zone Act 3"
+{
+	Music = "O_MAP26M"
+	Sky1 = "SKY22"
 	Next = MAP29
 }
+
 // havent changed from 1094 yet past here
 // Extra levels
 map MAP29 "Spring Hill Zone"
@@ -126,131 +155,120 @@ map MAP32 "Mario Koopa Blast Zone Act 3"
 	Next = MAP40
 }
 
-// Make it snow! See Eviternity again. Or code it yourself... Or steal the one from 667.
-// Also, somehow make Emerald Hunt a thing. That'd be awesome. Way later, though!!
-map MAP40 "Christmas Hunt"
+// Christmas Hunt is no more, it was replaced by Neo Aerial Garden Zone...
+// Wait, is collision fucked because the stage is so big, or is it faulty line specials making you stick to the ceiling?
+map MAP40 "Neo Aerial Garden Zone"
 {
-	Music = "O_MAPA6M"
-	Sky1 = "SKY40"
-	Next = MAP42
-}
-
-map MAP42 "SA Example"
-{
-	Music = "O_MAP42M"
+	Music = "O_MAPB6M"
 	Sky1 = "SKY1"
-	Next = MAP70 // Skip Special Stages. They can be accessed later.
+	Next = MAP70 // Skip Special Stages. They can be accessed later. The "next map" for this was originally AGZ but I don't want to do that. Maybe I'll split these into "episodes".
 }
 
 map MAP50 "Special Stage 1"
 {
 	Music = "O_MAP50M"
-	Sky1 = "SKY60"
+	Sky1 = "SKY50"
 	Next = MAP51
 }
 map MAP51 "Special Stage 2"
 {
 	Music = "O_MAP50M"
-	Sky1 = "SKY61"
+	Sky1 = "SKY51"
 	Next = MAP52
 }
 map MAP52 "Special Stage 3"
 {
 	Music = "O_MAP50M"
-	Sky1 = "SKY62"
+	Sky1 = "SKY52"
 	Next = MAP53
 }
 map MAP53 "Special Stage 4"
 {
 	Music = "O_MAP50M"
-	Sky1 = "SKY63"
+	Sky1 = "SKY53"
 	Next = MAP54
 }
 map MAP54 "Special Stage 5"
 {
 	Music = "O_MAP50M"
-	Sky1 = "SKY64"
+	Sky1 = "SKY54"
 	Next = MAP55
 }
 map MAP55 "Special Stage 6"
 {
 	Music = "O_MAP50M"
-	Sky1 = "SKY65"
+	Sky1 = "SKY55"
 	Next = MAP56
 }
 map MAP56 "Special Stage 7"
 {
 	Music = "O_MAP50M"
-	Sky1 = "SKY66"
+	Sky1 = "SKY56"
+	Next = MAP57
+}
+map MAP57 "Special Stage 8"
+{
+	Music = "O_MAP50M"
+	Sky1 = "SKY57"
 	Next = MAP50
 }
 
 // Skipping Circuit and CTF maps...
 // Match
-map MAP90 "Sapphire Falls Zone"
+map MAP90 "Jade Valley Zone"
 {
-	Music = "O_MAP93M"
+	Music = "O_MAP92M"
 	Sky1 = "SKY1"
 	Next = MAP91
 }
-map MAP91 "Thunder Citadel Zone" // Rain.
+map MAP91 "Noxious Factory Zone"
+{
+	Music = "O_MAP04M"
+	Sky1 = "SKY4"
+	Next = MAP92
+}
+map MAP92 "Tidal Palace Zone"
 {
 	Music = "O_MAP08M"
 	Sky1 = "SKY7"
-	Next = MAP92
-}
-map MAP92 "Desolate Twilight Zone"
-{
-	Music = "O_MAP98M"
-	Sky1 = "SKY94"
 	Next = MAP93
 }
-map MAP93 "Hydro Plant Zone"
+map MAP93 "Thunder Citadel Zone" // Storm. Thunder, rain, and lightning.
 {
-	Music = "O_MAP94M"
-	Sky1 = "SKY1"
+	Music = "O_MAP11M"
+	Sky1 = "SKY10"
 	Next = MAP94
 }
-map MAP94 "Starlit Warehouse Zone"
+map MAP94 "Desolate Twilight Zone"
 {
-	Music = "O_MAP19M"
-	Sky1 = "SKY94"
+	Music = "O_MAP95M"
+	Sky1 = "SKY21"
 	Next = MAP95
 }
-map MAP95 "Midnight Abyss Zone"
+map MAP95 "Infernal Cavern Zone"
 {
-	Music = "O_MAP22M"
-	Sky1 = "SKY96"
+	Music = "O_MAP18M"
+	Sky1 = "SKY7" // ... Deep Sea?? What
 	Next = MAP96
 }
-map MAP96 "Tree Ring Zone"
+map MAP96 "Frost Columns Zone" // ⑨
 {
-	Music = "O_MAPD8M" // I hope...
-	Sky1 = "SKY94"
-	Next = MAP97
-}
-map MAP97 "Zim's Base Zone"
-{
-	Music = "O_MAP97M"
-	Sky1 = "SKY97"
+	Music = "O_MAP93M"
+	Sky1 = "SKY11"
 	Next = MAP98
 }
-map MAP98 "Airborne Temple Zone"
+// ...There's no MAP97?? wtf
+map MAP98 "Sapphire Falls Zone"
 {
-	Music = "O_MAP92M"
+	Music = "O_MAP45M"
 	Sky1 = "SKY1"
 	Next = MAP99
 }
 map MAP99 "Meadow Match Zone" // the one and only.
 {
-	Music = "O_MAP91M"
+	Music = "O_MAP90M"
 	Sky1 = "SKY1"
 	Next = MAP90
 }
 
-// SRB2JTE
-map MAP23 "SA City"
-{
-	Music = "O_MAP63M"
-	Sky1 = "SKY1"
-}
+// SRB1 remake... Maybe add a camera object or something somehow. 2D mode will be a chore...
