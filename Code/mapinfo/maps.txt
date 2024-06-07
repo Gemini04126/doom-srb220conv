@@ -76,13 +76,7 @@ map MAP11 "Castle Eggman Zone Act 2"
 {
 	Music = "O_MAP11M"
 	Sky1 = "SKY7"
-	Next = MAP12
-}
-map MAP12 "Castle Eggman Zone Act 3"
-{
-	Music = "O_MAP12M"
-	Sky1 = "SKY7"
-	Next = MAP13
+	Next = MAP13 // CEZ3 isn't in this version, despite a MAINCFG section existing for it
 }
 
 // ACZ (1 act)

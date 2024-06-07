@@ -5,151 +5,58 @@ strictpatches = 0;
 maps
 {
 	
-	MAP01
+	MAP70
 	{
-		defaultwalltexture = "GFZGRASS";
+		viewpositiony = 2413.992f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "ACZFLR01";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 3820.142f;
 		overridemiddletexture = false;
+		viewscale = 5.448352f;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				starpostactivator = 3;
+				finishline = 3;
+				triggertag = 0;
+			}
+		}
+		defaulttoptexture = "STONEW1";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "STONEW1";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
 		defaultceiltexture = "F_SKY1";
-		overrideceiltexture = false;
-		custombrightness = 196;
-		scriptcompiler = "zdoom_acs.cfg";
-		
-		resources
-		{
-			
-			resource0
-			{
-				type = 0;
-				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-				requiredarchives = "";
-			}
-		}
-		viewpositiony = 47.88f;
-		viewpositionx = 2873.678f;
-		
-		testprecommand
-		{
-			autocloseonsuccess = true;
-			exitcodeiserror = true;
-			stderriserror = true;
-		}
-		customceilheight = 128;
-		customfloorheight = 0;
-		
-		grid
-		{
-			backoffsetx = 0;
-			backsource = 0;
-			gridoriginy = 0;
-			backscaley = 100;
-			gridrotate = 0;
-			backscalex = 100;
-			gridoriginx = 0;
-			gridsize = 16;
-			background = "";
-			backoffsety = 0;
-		}
-		viewscale = 2.447415f;
-		
-		reloadresourceprecommand
-		{
-			autocloseonsuccess = true;
-			exitcodeiserror = true;
-			stderriserror = true;
-		}
-		defaulttoptexture = "GFZGRASS";
-		overridebottomtexture = false;
-		defaultbottomtexture = "GFZGRASS";
-		defaultfloortexture = "GFZFLR02";
-		overrideceilheight = false;
-		overridebrightness = false;
-		
-		testpostcommand
-		{
-			autocloseonsuccess = true;
-			exitcodeiserror = true;
-			stderriserror = true;
-		}
-		overridefloorheight = false;
-		overridetoptexture = false;
-		uselongtexturenames = false;
-		overridefloortexture = false;
-		
-		reloadresourcepostcommand
-		{
-			autocloseonsuccess = true;
-			exitcodeiserror = true;
-			stderriserror = true;
-		}
-		
-		fieldtypes
-		{
-			
-			linedef
-			{
-				midpeg = 3;
-			}
-			
-			sector
-			{
-				exit = 3;
-				specialstagepit = 3;
-				returnflag = 3;
-				doublestepup = 3;
-				lightalpha = 0;
-			}
-			
-			thing
-			{
-				stringarg0 = 2;
-			}
-		}
-	}
-	
-	MAP02
-	{
-		viewpositiony = 1728f;
-		custombrightness = 196;
-		
-		testpostcommand
-		{
-			autocloseonsuccess = true;
-			stderriserror = true;
-			exitcodeiserror = true;
-		}
-		uselongtexturenames = false;
-		overrideceiltexture = false;
-		overridebottomtexture = false;
-		defaultfloortexture = "GFZFLR02";
-		
-		reloadresourceprecommand
-		{
-			autocloseonsuccess = true;
-			stderriserror = true;
-			exitcodeiserror = true;
-		}
-		viewpositionx = 7648f;
-		overridemiddletexture = false;
-		viewscale = 1.100206f;
-		defaulttoptexture = "GFZGRASS";
-		
-		testprecommand
-		{
-			autocloseonsuccess = true;
-			stderriserror = true;
-			exitcodeiserror = true;
-		}
-		overridetoptexture = false;
-		customceilheight = 128;
-		customfloorheight = 0;
-		defaultwalltexture = "GFZGRASS";
-		overridefloortexture = false;
-		scriptcompiler = "zdoom_acs.cfg";
-		defaultceiltexture = "GFZFLR01";
-		defaultbottomtexture = "GFZGRASS";
+		defaultbottomtexture = "STONEW1";
 		
 		reloadresourcepostcommand
 		{
@@ -168,7 +75,7 @@ maps
 			gridoriginx = 0;
 			backoffsetx = 0;
 			gridrotate = 0;
-			gridsize = 32;
+			gridsize = 4;
 			backscaley = 100;
 			backsource = 0;
 		}
@@ -186,30 +93,6 @@ maps
 				option2 = 0;
 				notfortesting = 0;
 				requiredarchives = "";
-			}
-		}
-		
-		fieldtypes
-		{
-			
-			linedef
-			{
-				midpeg = 3;
-				noclimb = 3;
-			}
-			
-			sector
-			{
-				doublestepup = 3;
-				lightalpha = 0;
-				exit = 3;
-				specialstagepit = 3;
-				returnflag = 3;
-			}
-			
-			thing
-			{
-				stringarg0 = 2;
 			}
 		}
 	}

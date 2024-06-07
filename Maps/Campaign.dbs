@@ -213,4 +213,2368 @@ maps
 			}
 		}
 	}
+	
+	MAP50
+	{
+		viewpositiony = -231.9501f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR16";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 850.4267f;
+		overridemiddletexture = false;
+		viewscale = 0.2165557f;
+		defaulttoptexture = "GFZROCK";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GFZROCK";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "GFZROCK";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 128;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+		}
+	}
+	
+	MAP51
+	{
+		viewpositiony = -1192.827f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR17";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -92.64886f;
+		overridemiddletexture = false;
+		viewscale = 0.4117372f;
+		defaulttoptexture = "THZMETL2";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "THZMETL2";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "THZMETL2";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 64;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sidedef
+			{
+				repeatcnt = 0;
+			}
+			
+			sector
+			{
+				lightalpha = 0;
+			}
+		}
+	}
+	
+	MAP52
+	{
+		viewpositiony = -849.5307f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR18";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 295.9678f;
+		overridemiddletexture = false;
+		viewscale = 1.037338f;
+		defaulttoptexture = "GFZROCK";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GFZROCK";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "GFZROCK";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sidedef
+			{
+				repeatcnt = 0;
+			}
+		}
+	}
+	
+	MAP03
+	{
+		viewpositiony = -607.117f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "GFZFLR02";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -357.4305f;
+		overridemiddletexture = false;
+		viewscale = 0.3862998f;
+		defaulttoptexture = "GFZGRASS";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GFZGRASS";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "GFZGRASS";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 64;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sector
+			{
+				lightalpha = 0;
+			}
+		}
+	}
+	
+	MAP04
+	{
+		viewpositiony = 918.1197f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "GFZFLR02";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -1970.334f;
+		overridemiddletexture = false;
+		viewscale = 2.607444f;
+		defaulttoptexture = "GFZGRASS";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GFZGRASS";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "GFZGRASS";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 16;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+				noclimb = 3;
+			}
+			
+			sector
+			{
+				exit = 3;
+				specialstagepit = 3;
+				returnflag = 3;
+			}
+		}
+	}
+	
+	MAP05
+	{
+		viewpositiony = 3173.776f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "THZFLR24";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -13502.39f;
+		overridemiddletexture = false;
+		viewscale = 1.42106f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+				midpeg = 3;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				lightalpha = 0;
+				triggerspecial_touch = 3;
+				returnflag = 3;
+				exit = 3;
+				triggerline_plane = 3;
+				triggertag = 0;
+			}
+		}
+		defaulttoptexture = "GLASS2";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GLASS2";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "THZFLR06";
+		defaultbottomtexture = "GLASS2";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 16;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP06
+	{
+		viewpositiony = 216.7324f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "THZFLR06";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 2189.208f;
+		overridemiddletexture = false;
+		viewscale = 1.900495f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+			}
+		}
+		defaulttoptexture = "THZWAL01";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "THZWAL01";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "THZFLR14";
+		defaultbottomtexture = "THZWAL01";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 16;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP07
+	{
+		viewpositiony = -16134.38f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "DSZFLR10";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -5496.401f;
+		overridemiddletexture = false;
+		viewscale = 1.95609f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+				noskew = 3;
+				midsolid = 3;
+				midpeg = 3;
+				arg5 = 0;
+				skewtd = 3;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				lightalpha = 0;
+				triggerer = 2;
+				returnflag = 3;
+				exit = 3;
+				doublestepup = 3;
+				triggerline_plane = 3;
+				triggertag = 0;
+			}
+		}
+		defaulttoptexture = "DSZ10";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "DSZ10";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "DSZFLR10";
+		defaultbottomtexture = "DSZ10";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 16;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP08
+	{
+		viewpositiony = 5702.023f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "DIRT4F";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 12303.86f;
+		overridemiddletexture = false;
+		viewscale = 1.124553f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midsolid = 3;
+				noclimb = 3;
+				arg5 = 0;
+				midpeg = 3;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				lightalpha = 0;
+				returnflag = 3;
+				exit = 3;
+				triggertag = 0;
+				doublestepup = 3;
+				triggerline_plane = 3;
+				nostepdown = 3;
+				zoomtubestart = 3;
+			}
+		}
+		defaulttoptexture = "DSZ3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "DSZ3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "DIRT2F";
+		defaultbottomtexture = "DSZ3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP09
+	{
+		viewpositiony = 721.7499f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "DSZFLR10";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -489.7738f;
+		overridemiddletexture = false;
+		viewscale = 0.9354159f;
+		defaulttoptexture = "DSZ3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "DSZ3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "DSZFLR10";
+		defaultbottomtexture = "DSZ3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+			}
+			
+			sector
+			{
+				lightalpha = 0;
+			}
+		}
+	}
+	
+	MAP10
+	{
+		viewpositiony = -21934.39f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "MMFLRB4";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 1554.451f;
+		overridemiddletexture = false;
+		viewscale = 0.2329807f;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				specialstagepit = 3;
+				lightalpha = 0;
+				returnflag = 3;
+				exit = 3;
+				triggertag = 0;
+				doublestepup = 3;
+				zoomtubestart = 3;
+				zoomtubeend = 3;
+			}
+			
+			sidedef
+			{
+				repeatcnt = 0;
+			}
+			
+			linedef
+			{
+				midsolid = 3;
+				noclimb = 3;
+				midpeg = 3;
+			}
+			
+			thing
+			{
+				arg7 = 0;
+				arg8 = 0;
+			}
+		}
+		defaulttoptexture = "MMB3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "MMB3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "MMB3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 128;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP11
+	{
+		viewpositiony = -24635.06f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "CEZFLR03";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -22172.77f;
+		overridemiddletexture = false;
+		viewscale = 0.4834297f;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				specialstagepit = 3;
+				lightalpha = 0;
+				returnflag = 3;
+				exit = 3;
+				doublestepup = 3;
+				triggerline_plane = 3;
+				triggertag = 0;
+			}
+			
+			sidedef
+			{
+				repeatcnt = 0;
+			}
+			
+			linedef
+			{
+				noclimb = 3;
+				midsolid = 3;
+				midpeg = 3;
+				arg5 = 0;
+				bouncy = 3;
+			}
+			
+			thing
+			{
+				arg7 = 0;
+				arg8 = 0;
+			}
+		}
+		defaulttoptexture = "CASTLEG";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "CASTLEG";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "CASTLEG";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 64;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP13
+	{
+		viewpositiony = 14262.18f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "ACZFLR01";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 11146.71f;
+		overridemiddletexture = false;
+		viewscale = 0.01740446f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midsolid = 3;
+				skewtd = 3;
+				noclimb = 3;
+				midpeg = 3;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				lightalpha = 0;
+				triggerer = 2;
+				returnflag = 3;
+				exit = 3;
+				triggertag = 0;
+				ropehang = 3;
+				triggerline_plane = 3;
+				triggerspecial_touch = 3;
+			}
+		}
+		defaulttoptexture = "ACZFENCE";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "ACZFENCE";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "ACZFENCE";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 2048;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP16
+	{
+		viewpositiony = -2760.625f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "MMFLR8";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -10971.5f;
+		overridemiddletexture = false;
+		viewscale = 0.2329807f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				executordelay = 0;
+				noclimb = 3;
+				midsolid = 3;
+				midpeg = 3;
+				netonly = 3;
+				stringarg0 = 2;
+				nonet = 3;
+				noskew = 3;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				returnflag = 3;
+				exit = 3;
+				triggerline_plane = 3;
+				fadealpha = 0;
+				triggertag = 0;
+			}
+		}
+		defaulttoptexture = "REDWALL";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "REDWALL";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "MMFLR8";
+		defaultbottomtexture = "REDWALL";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 128;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP17
+	{
+		viewpositiony = 1641.672f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "RLAVA1";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 1090.511f;
+		overridemiddletexture = false;
+		viewscale = 0.5062253f;
+		
+		fieldtypes
+		{
+			
+			thing
+			{
+				stringarg0 = 2;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				returnflag = 3;
+				exit = 3;
+			}
+		}
+		defaulttoptexture = "MMB3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "MMB3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "MMFLRB2";
+		defaultbottomtexture = "MMB3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 64;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP22
+	{
+		viewpositiony = -14967.42f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "ERZRCKF7";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -49.04364f;
+		overridemiddletexture = false;
+		viewscale = 1.753101f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+				arg6 = 0;
+				noskew = 3;
+				midsolid = 3;
+				midpeg = 3;
+				arg5 = 0;
+				stringarg1 = 2;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
+				flip = 3;
+			}
+			
+			sector
+			{
+				exit = 3;
+				specialstagepit = 3;
+				flipspecial_ceiling = 3;
+				zoomtubeend = 3;
+				triggerline_plane = 3;
+				triggertag = 0;
+				zoomtubestart = 3;
+				flipspecial_nofloor = 3;
+				triggerspecial_touch = 3;
+				doublestepup = 3;
+				lightalpha = 0;
+				outerspace = 3;
+				fadealpha = 0;
+				returnflag = 3;
+			}
+		}
+		defaulttoptexture = "ERZROCK3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "ERZROCK3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "ERZROCK3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 16;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP23
+	{
+		viewpositiony = -1819.515f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "THZFLR06";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 272.3612f;
+		overridemiddletexture = false;
+		viewscale = 1.124553f;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				fan = 3;
+				exit = 3;
+				specialstagepit = 3;
+				flipspecial_nofloor = 3;
+				ropehang = 3;
+				zoomtubeend = 3;
+				flipspecial_ceiling = 3;
+				triggerline_plane = 3;
+				triggertag = 0;
+				zoomtubestart = 3;
+				triggerer = 2;
+				triggerspecial_touch = 3;
+				lightalpha = 0;
+				outerspace = 3;
+				fadealpha = 0;
+				returnflag = 3;
+			}
+			
+			sidedef
+			{
+				repeatcnt = 0;
+			}
+			
+			linedef
+			{
+				bouncy = 3;
+				stringarg0 = 2;
+				netonly = 3;
+				nonet = 3;
+				midpeg = 3;
+				noclimb = 3;
+				noskew = 3;
+				midsolid = 3;
+				arg5 = 0;
+				skewtd = 3;
+				executordelay = 0;
+				stringarg1 = 2;
+			}
+			
+			thing
+			{
+				moreids = 2;
+				stringarg0 = 2;
+				flip = 3;
+			}
+		}
+		defaulttoptexture = "BLUWALL";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "BLUWALL";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "ERZBLUF2";
+		defaultbottomtexture = "BLUWALL";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP24
+	{
+		viewpositiony = 9.795892f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "PIT";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 15.52721f;
+		overridemiddletexture = false;
+		viewscale = 1.598411f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+			}
+			
+			thing
+			{
+				flip = 3;
+				arg5 = 0;
+			}
+		}
+		defaulttoptexture = "ERZGREY3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "ERZGREY3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "ERZGREY3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 16;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP53
+	{
+		viewpositiony = 1044.495f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR06";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 1056.409f;
+		overridemiddletexture = false;
+		viewscale = 0.4243508f;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				lightalpha = 0;
+			}
+		}
+		defaulttoptexture = "SPEC04";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "SPEC04";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "SFLR06";
+		defaultbottomtexture = "SPEC04";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 64;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP54
+	{
+		viewpositiony = -1288.45f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR20";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -1130.319f;
+		overridemiddletexture = false;
+		viewscale = 0.4389835f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sector
+			{
+				lightalpha = 0;
+			}
+		}
+		defaulttoptexture = "DSZ3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "DSZ3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "DSZ3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 64;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP55
+	{
+		viewpositiony = 399.4109f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR21";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -1708.025f;
+		overridemiddletexture = false;
+		viewscale = 0.3852129f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				returnflag = 3;
+				exit = 3;
+			}
+		}
+		defaulttoptexture = "DSZ3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "DSZ3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "DSZ3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 64;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP56
+	{
+		viewpositiony = 1164.049f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR22";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -1180.373f;
+		overridemiddletexture = false;
+		viewscale = 0.7823483f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				returnflag = 3;
+				exit = 3;
+			}
+		}
+		defaulttoptexture = "DSZ3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "DSZ3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "DSZ3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
+	
+	MAP57
+	{
+		viewpositiony = -1300.173f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "SFLR25";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 1117.409f;
+		overridemiddletexture = false;
+		viewscale = 0.7823483f;
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sector
+			{
+				specialstagepit = 3;
+				returnflag = 3;
+				exit = 3;
+			}
+		}
+		defaulttoptexture = "DSZ3";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "DSZ3";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "DSZ3";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+	}
 }

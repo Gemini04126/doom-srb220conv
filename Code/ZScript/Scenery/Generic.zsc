@@ -12,6 +12,45 @@ class Thok : Actor
 			THOK A 8;
 			Stop;
 	}
-} 
+}
+
 class SRB2Splash : Actor
 {}
+
+class CeilingSpike : Actor
+{
+	Default
+	{
+		Radius 8;
+		Height 42;
+		+SOLID
+		+SPAWNCEILING
+		+NOGRAVITY
+	}
+	States
+	{
+		Spawn:
+			DSPK A -1; // so cool
+			Stop;
+	}
+}
+class FloorSpike : Actor
+{
+	Default
+	{
+		// why?
+		Radius 8;
+		Height 42;
+		// it literally is set to be intangible...?
+		// I'll keep this part in anyway I guess
+		+NOBLOCKMAP
+		+NOGRAVITY
+		+NOINTERACTION
+	}
+	States
+	{
+		Spawn:
+			USPK A -1; // so cool
+			Stop;
+	}
+}

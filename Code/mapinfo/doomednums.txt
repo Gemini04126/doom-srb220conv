@@ -42,6 +42,9 @@ DoomEdNums
 	557 = YellowDiagDownSpring
 	558 = RedDiagDownSpring
 
+	// Generic scenery
+	522 = CeilingSpike
+	523 = FloorSpike
 	// GFZ scenery
 	802 = GFZPurpleFlower
 	800 = GFZOrangeFlower
@@ -50,4 +53,8 @@ DoomEdNums
 	804 = GFZBerryBush
 	// THZ scenery
 	900 = THZSteamFlower
+	// DSZ scenery
+	1000 = DSZGargoyle
+	1001 = DSZSeaweed
+	1002 = DSZWaterDrip
 }
