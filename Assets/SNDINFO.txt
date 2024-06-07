@@ -5,3 +5,5 @@ sfx/spring	DSSPRING
 sfx/lvpass	DSLVPASS
 sfx/statu2	DSSTATU2
 sfx/wdrip1	DSWDRIP1
+sfx/steam1	DSSTEAM1
+sfx/steam2	DSSTEAM2

@@ -1,24 +1,30 @@
 class Ring : HealthBonus
 {
+	// void A_AttractChase
 	Default
 	{
 		Tag "Ring";
 		+NOGRAVITY -MOVEWITHSECTOR +NOLIFTDROP +NOCLIP
 		Inventory.MaxAmount 9999;
 		Inventory.PickupMessage "";
-		Inventory.Icon "RINGA0";
 		Inventory.PickupFlash "RingSparkle";
+		Radius 16;
+		Height 24;
 	}
 	States
 	{
 		Spawn:
-			RING ABCDEFGHIJKLMNOPQRSTUVWX 1;
+			RING ABCDEFGHIJKLMNOPQRSTUVWX 1 /*A_AttractChase*/;
 			Loop;
 	}
 }
-
 class RingSparkle : PickupFlash
 {
+	Default
+	{
+		Radius 32;
+		Height 32;
+	}
 	States
 	{
 		Spawn:
@@ -27,5 +33,78 @@ class RingSparkle : PickupFlash
 	}
 }
 
-// mario coin = COIN
-// coin spark = CPRK
+class MarioCoin : Ring
+{
+	Default
+	{
+		Tag "Coin";
+		+NOGRAVITY -MOVEWITHSECTOR +NOLIFTDROP +NOCLIP
+		Inventory.PickupFlash "MarioCoinSparkle";
+	}
+	States
+	{
+		Spawn:
+			COIN ABC 5 /*A_AttractChase*/;
+			Loop;
+	}
+}
+class MarioCoinSparkle : PickupFlash
+{
+	Default
+	{
+		Radius 32;
+		Height 32;
+	}
+	States
+	{
+		Spawn:
+			CPRK ABCD 5;
+			Stop;
+	}
+}
+
+class SpecialStageToken : Inventory // Make the Signpost check for this later.
+{
+	Actor child;
+	override void PostBeginPlay()
+	{
+		child = Spawn("SpecialStageTokenBubble", self.pos);
+		Super.PostBeginPlay();
+	}
+	override void Touch (Actor toucher) // why did this take like 30 minutes to figure out
+	{
+		child.Destroy();
+		Super.Touch(toucher);
+	}
+	Default
+	{
+		Radius 8;
+		Height 16;
+		Inventory.MaxAmount 9999;
+		Inventory.PickupMessage "";
+		Inventory.PickupFlash "RingSparkle";
+		+NOGRAVITY
+	}
+	States
+	{
+		Spawn:
+			EMMY ABCDEFG 2 Bright;
+			Loop;
+	}
+}
+class SpecialStageTokenBubble : Actor
+{
+	Default
+	{
+		Radius 8;
+		Height 16;
+		+NOGRAVITY
+		RenderStyle "Add";
+	}
+	States
+	{
+		Spawn:
+			TOKE A -1;
+			Stop;
+	}
+}

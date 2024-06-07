@@ -250,6 +250,15 @@ class InvincibilityIconPowerup : InvulnerabilitySphere
 	{
 		Powerup.Duration 20*35;	// the standard 20-second invincibility
 		Inventory.PickupMessage "";
+		Powerup.Type "PowerInvincible";
+	}
+}
+class PowerInvincible : PowerInvulnerable
+{
+	Default
+	{
+		Powerup.Duration -20;
+		Inventory.Icon "PINVB0";
 	}
 }
 
@@ -274,6 +283,7 @@ class SuperSneakersIcon : SRB2MonitorIconTemplate
 {
 	void A_ItemBox()
 	{
+		A_GiveInventory("SuperSneakersIconPowerup", 1, AAPTR_TARGET);
 	}
 	States
 	{
@@ -284,6 +294,28 @@ class SuperSneakersIcon : SRB2MonitorIconTemplate
 			#### # 0 A_Stop;
 			#### # 18 A_ItemBox;
 			Stop;
+	}
+}
+class SuperSneakersIconPowerup : PowerupGiver
+{
+	Default
+	{
+		+COUNTITEM
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.BIGPOWERUP
+		Inventory.MaxAmount 0;
+		Powerup.Type "PowerSpeedShoes";
+		Inventory.PickupMessage "";
+	}
+}
+class PowerSpeedShoes : PowerSpeed
+{
+	Default
+	{
+		Powerup.Duration -20;
+		Speed 1.66;
+		Inventory.Icon "SHTVB0";
 	}
 }
 

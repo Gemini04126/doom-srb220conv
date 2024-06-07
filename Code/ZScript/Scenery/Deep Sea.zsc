@@ -64,8 +64,7 @@ class DSZWaterDrop : Actor
 {
 	Default
 	{
-		BounceSound "sfx/wdrip1";
-		Health 1000;
+		DeathSound "sfx/wdrip1";
 		Radius 2;
 		Height 8;
 		Mass 8;
@@ -77,7 +76,64 @@ class DSZWaterDrop : Actor
 			DRIP D -1;
 			Stop;
 		Death:
+			TNT1 A 0 A_Scream;
 			DRIP EF 1;
+			Stop;
+	}
+}
+
+class DSZCoral1 : Actor
+{
+	Default
+	{
+		Radius 8;
+		Height 16;
+		+NOCLIP
+		+NOBLOCKMAP
+		+NOGRAVITY
+		+NOINTERACTION
+	}
+	States
+	{
+		Spawn:
+			CRL1 A -1;
+			Stop;
+	}
+}
+class DSZCoral2 : DSZCoral1
+{
+	States
+	{
+		Spawn:
+			CRL2 A -1;
+			Stop;
+	}
+}
+class DSZCoral3 : DSZCoral1
+{
+	States
+	{
+		Spawn:
+			CRL3 A -1;
+			Stop;
+	}
+}
+
+class DSZBlueCrystal : Actor
+{
+	Default
+	{
+		Radius 8;
+		Height 16;
+		+NOCLIP
+		+NOBLOCKMAP
+		+NOGRAVITY
+		+NOINTERACTION
+	}
+	States
+	{
+		Spawn:
+			BCRY A -1;
 			Stop;
 	}
 }

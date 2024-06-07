@@ -27,8 +27,8 @@ maps
 				requiredarchives = "";
 			}
 		}
-		viewpositiony = 47.88f;
-		viewpositionx = 2873.678f;
+		viewpositiony = 6271.013f;
+		viewpositionx = -400.053f;
 		
 		testprecommand
 		{
@@ -48,11 +48,11 @@ maps
 			gridrotate = 0;
 			backscalex = 100;
 			gridoriginx = 0;
-			gridsize = 16;
+			gridsize = 256;
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 2.447415f;
+		viewscale = 0.1365622f;
 		
 		reloadresourceprecommand
 		{
@@ -596,7 +596,7 @@ maps
 	
 	MAP04
 	{
-		viewpositiony = 918.1197f;
+		viewpositiony = -6048f;
 		custombrightness = 196;
 		
 		testpostcommand
@@ -616,9 +616,9 @@ maps
 			stderriserror = true;
 			exitcodeiserror = true;
 		}
-		viewpositionx = -1970.334f;
+		viewpositionx = 5088f;
 		overridemiddletexture = false;
-		viewscale = 2.607444f;
+		viewscale = 1.100206f;
 		defaulttoptexture = "GFZGRASS";
 		
 		testprecommand
@@ -653,7 +653,7 @@ maps
 			gridoriginx = 0;
 			backoffsetx = 0;
 			gridrotate = 0;
-			gridsize = 16;
+			gridsize = 32;
 			backscaley = 100;
 			backsource = 0;
 		}
@@ -998,7 +998,7 @@ maps
 	
 	MAP08
 	{
-		viewpositiony = 5702.023f;
+		viewpositiony = -12191.63f;
 		custombrightness = 196;
 		
 		testpostcommand
@@ -1018,39 +1018,9 @@ maps
 			stderriserror = true;
 			exitcodeiserror = true;
 		}
-		viewpositionx = 12303.86f;
+		viewpositionx = 601.0381f;
 		overridemiddletexture = false;
-		viewscale = 1.124553f;
-		
-		fieldtypes
-		{
-			
-			linedef
-			{
-				midsolid = 3;
-				noclimb = 3;
-				arg5 = 0;
-				midpeg = 3;
-			}
-			
-			thing
-			{
-				stringarg0 = 2;
-			}
-			
-			sector
-			{
-				specialstagepit = 3;
-				lightalpha = 0;
-				returnflag = 3;
-				exit = 3;
-				triggertag = 0;
-				doublestepup = 3;
-				triggerline_plane = 3;
-				nostepdown = 3;
-				zoomtubestart = 3;
-			}
-		}
+		viewscale = 1.987379f;
 		defaulttoptexture = "DSZ3";
 		
 		testprecommand
@@ -1085,7 +1055,7 @@ maps
 			gridoriginx = 0;
 			backoffsetx = 0;
 			gridrotate = 0;
-			gridsize = 32;
+			gridsize = 16;
 			backscaley = 100;
 			backsource = 0;
 		}
@@ -1103,6 +1073,36 @@ maps
 				option2 = 0;
 				notfortesting = 0;
 				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+				midpeg = 3;
+				midsolid = 3;
+				arg5 = 0;
+			}
+			
+			sector
+			{
+				doublestepup = 3;
+				lightalpha = 0;
+				triggertag = 0;
+				nostepdown = 3;
+				zoomtubestart = 3;
+				triggerline_plane = 3;
+				exit = 3;
+				specialstagepit = 3;
+				returnflag = 3;
+			}
+			
+			thing
+			{
+				stringarg0 = 2;
 			}
 		}
 	}

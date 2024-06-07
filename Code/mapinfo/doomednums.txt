@@ -29,6 +29,7 @@ DoomEdNums
 
 	// Various map objects
 	300 = Ring
+	312 = SpecialStageToken
 	501 = Signpost
 	502 = Starpost
 	541 = THZSteam
@@ -57,4 +58,8 @@ DoomEdNums
 	1000 = DSZGargoyle
 	1001 = DSZSeaweed
 	1002 = DSZWaterDrip
+	1003 = DSZCoral1
+	1004 = DSZCoral2
+	1005 = DSZCoral3
+	1006 = DSZBlueCrystal
 }
