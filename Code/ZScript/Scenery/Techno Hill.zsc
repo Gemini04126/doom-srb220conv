@@ -11,3 +11,18 @@ class THZSteamFlower : SRB2SceneryTemplate
 			Loop;
 	}
 }
+
+class THZAlarm : SRB2SceneryTemplate
+{
+	Default
+	{
+		DeathSound "sfx/alarm";
+		+SPAWNCEILING
+	}
+	States
+	{
+		Spawn:
+			ALRM A 35 Bright A_Scream;
+			Loop;
+	}
+}

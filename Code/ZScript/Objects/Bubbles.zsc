@@ -1,0 +1,137 @@
+class BubbleGenerator : SRB2SceneryTemplate
+{
+	int rand;
+	Actor bubble;
+	action void A_BubbleSpawn()
+	{
+		if (invoker.waterlevel == 0)
+		{
+			invoker.bINVISIBLE = true;
+			return;
+		}
+
+		invoker.bINVISIBLE = false;
+		invoker.rand = Random(0,255); // P_Random gives you a random byte between 0 and 255
+
+		if (GetAge() % (3*TICRATE) < 8)
+		{
+			invoker.bubble = Spawn("ExtraLargeBubble", self.pos + (0, 0, self.Height/2));
+			Console.Printf("Spawned extra large bubble");
+		}
+		else if (invoker.rand > 128)
+			invoker.bubble = Spawn("SmallBubble", self.pos + (0, 0, self.Height/2));
+		else if (invoker.rand < 128 && invoker.rand > 96)
+			invoker.bubble = Spawn("MediumBubble", self.pos + (0, 0, self.Height/2));
+
+		if (invoker.bubble)
+			invoker.bubble.scale = self.scale;
+
+	}
+	action void A_BubbleCheck()
+	{
+		if (invoker.waterlevel > 0)
+			invoker.bINVISIBLE = false;	// underwater so draw
+		else
+			invoker.bINVISIBLE = true;		// above water so don't draw
+	}
+	States
+	{
+		Spawn:
+			BUBL A 8 A_BubbleSpawn;
+			BUBL B 8 A_BubbleCheck;
+			Loop;
+	}
+}
+
+class SmallBubble : Actor
+{
+	override void Tick() // *juuuust* in case.
+	{
+		if (waterlevel == 0)
+		{
+			Destroy();
+		}
+		Super.Tick();
+	}
+	action void A_BubbleRise(bool bend = false, int risingSpeed = 0)
+	{
+		invoker.vel.Z += risingSpeed; // make bubbles rise!
+
+		// Move around slightly to make it look like it's bending around the water
+
+		if (!bend)
+		{
+			if (Random(0,255) < 32)
+			{
+				Thrust(
+					Random(0,255) & 1 ? 0.5 : -0.5,
+					Random(0,255) & 1 ? self.angle + 90 : self.angle);
+			}
+			else if (Random(0,255) < 32)
+			{
+				Thrust(
+					Random(0,255) & 1 ? 0.5 : -0.5,
+					Random(0,255) & 1 ? self.angle + 90 : self.angle - 180);
+			}
+		}
+	}
+	Default
+	{
+		Radius 4;
+		Height 4;
+		VSpeed 2;
+		Mass 16;
+		+NOGRAVITY
+		+NOCLIP
+		+NOBLOCKMAP
+		+MISSILE
+	}
+	States
+	{
+		Spawn:
+			BUBP A 1 A_BubbleRise;
+			Loop;
+		Death:
+			TNT1 A 0;
+			Stop;
+	}
+}
+class MediumBubble : SmallBubble
+{
+	Default
+	{
+		Radius 8;
+		Height 8;
+	}
+	States
+	{
+		Spawn:
+			BUBO A 1 A_BubbleRise;
+			Loop;
+	}
+}
+class ExtraLargeBubble : MediumBubble
+{
+	action void A_BubbleRise()
+	{
+		invoker.vel.Z = 6/5;
+	}
+	Default
+	{
+		Height 12;
+		+MISSILE
+		-NOCLIP
+		-NOBLOCKMAP
+		// might need to make a Tick function or somethin'...
+	}
+	States
+	{
+		Spawn:
+			BUBN A 16 Bright A_BubbleRise;
+			BUBM A -1 Bright A_BubbleRise;
+			Stop;
+		Death:
+			POPP A 16;
+			Stop;
+	}
+}

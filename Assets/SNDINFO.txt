@@ -7,3 +7,15 @@ sfx/statu2	DSSTATU2
 sfx/wdrip1	DSWDRIP1
 sfx/steam1	DSSTEAM1
 sfx/steam2	DSSTEAM2
+sfx/alarm	DSALARM
+sfx/amwtr1	DSAMWTR1
+sfx/amwtr2	DSAMWTR2
+sfx/amwtr3	DSAMWTR3
+sfx/amwtr4	DSAMWTR4
+sfx/amwtr5	DSAMWTR5
+sfx/amwtr6	DSAMWTR6
+sfx/amwtr7	DSAMWTR7
+sfx/amwtr8	DSAMWTR8
+sfx/ambint	DSAMBINT
+sfx/ambin2	DSAMBIN2
+sfx/deton	DSDETON

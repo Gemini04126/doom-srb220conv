@@ -25,6 +25,9 @@ class SRB2SceneryTemplate : Actor
 {
 	Default
 	{
+		+NOCLIP
+		+NOBLOCKMAP
+		+NOGRAVITY
 		+NOINTERACTION
 	}
 }

@@ -596,7 +596,7 @@ maps
 	
 	MAP04
 	{
-		viewpositiony = -6048f;
+		viewpositiony = -2220.289f;
 		custombrightness = 196;
 		
 		testpostcommand
@@ -616,9 +616,9 @@ maps
 			stderriserror = true;
 			exitcodeiserror = true;
 		}
-		viewpositionx = 5088f;
+		viewpositionx = 5348.61f;
 		overridemiddletexture = false;
-		viewscale = 1.100206f;
+		viewscale = 0.1015101f;
 		defaulttoptexture = "GFZGRASS";
 		
 		testprecommand
@@ -635,6 +635,104 @@ maps
 		scriptcompiler = "zdoom_acs.cfg";
 		defaultceiltexture = "F_SKY1";
 		defaultbottomtexture = "GFZGRASS";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 256;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+				noclimb = 3;
+			}
+			
+			sector
+			{
+				exit = 3;
+				specialstagepit = 3;
+				returnflag = 3;
+			}
+		}
+	}
+	
+	MAP05
+	{
+		viewpositiony = -1632f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "THZFLR24";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = 5216f;
+		overridemiddletexture = false;
+		viewscale = 1.175964f;
+		defaulttoptexture = "GLASS2";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GLASS2";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "THZFLR06";
+		defaultbottomtexture = "GLASS2";
 		
 		reloadresourcepostcommand
 		{
@@ -685,116 +783,18 @@ maps
 			
 			sector
 			{
+				triggerline_plane = 3;
+				triggertag = 0;
+				triggerspecial_touch = 3;
+				lightalpha = 0;
 				exit = 3;
 				specialstagepit = 3;
 				returnflag = 3;
-			}
-		}
-	}
-	
-	MAP05
-	{
-		viewpositiony = 3173.776f;
-		custombrightness = 196;
-		
-		testpostcommand
-		{
-			autocloseonsuccess = true;
-			stderriserror = true;
-			exitcodeiserror = true;
-		}
-		uselongtexturenames = false;
-		overrideceiltexture = false;
-		overridebottomtexture = false;
-		defaultfloortexture = "THZFLR24";
-		
-		reloadresourceprecommand
-		{
-			autocloseonsuccess = true;
-			stderriserror = true;
-			exitcodeiserror = true;
-		}
-		viewpositionx = -13502.39f;
-		overridemiddletexture = false;
-		viewscale = 1.42106f;
-		
-		fieldtypes
-		{
-			
-			linedef
-			{
-				noclimb = 3;
-				midpeg = 3;
 			}
 			
 			thing
 			{
 				stringarg0 = 2;
-			}
-			
-			sector
-			{
-				specialstagepit = 3;
-				lightalpha = 0;
-				triggerspecial_touch = 3;
-				returnflag = 3;
-				exit = 3;
-				triggerline_plane = 3;
-				triggertag = 0;
-			}
-		}
-		defaulttoptexture = "GLASS2";
-		
-		testprecommand
-		{
-			autocloseonsuccess = true;
-			stderriserror = true;
-			exitcodeiserror = true;
-		}
-		overridetoptexture = false;
-		customceilheight = 128;
-		customfloorheight = 0;
-		defaultwalltexture = "GLASS2";
-		overridefloortexture = false;
-		scriptcompiler = "zdoom_acs.cfg";
-		defaultceiltexture = "THZFLR06";
-		defaultbottomtexture = "GLASS2";
-		
-		reloadresourcepostcommand
-		{
-			autocloseonsuccess = true;
-			stderriserror = true;
-			exitcodeiserror = true;
-		}
-		overrideceilheight = false;
-		
-		grid
-		{
-			backscalex = 100;
-			gridoriginy = 0;
-			background = "";
-			backoffsety = 0;
-			gridoriginx = 0;
-			backoffsetx = 0;
-			gridrotate = 0;
-			gridsize = 16;
-			backscaley = 100;
-			backsource = 0;
-		}
-		overridebrightness = false;
-		overridefloorheight = false;
-		
-		resources
-		{
-			
-			resource0
-			{
-				type = 0;
-				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-				requiredarchives = "";
 			}
 		}
 	}

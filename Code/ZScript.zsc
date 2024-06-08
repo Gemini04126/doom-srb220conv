@@ -11,8 +11,10 @@ version "4.1.0"
 #include "ZScript/Objects/Starpost.zsc"		// Starpost
 #include "ZScript/Objects/Signpost.zsc"		// Signpost
 #include "ZScript/Objects/Springs.zsc"		// Springs
+#include "ZScript/Objects/Bubbles.zsc"		// Bubbles
 
 #include "ZScript/Scenery/Generic.zsc"		// Generic scenery/effect objects
+#include "ZScript/Scenery/Ambience.zsc"		// Ambient sounds
 #include "ZScript/Scenery/Greenflower.zsc"	// GFZ scenery objects
 #include "ZScript/Scenery/Techno Hill.zsc"	// THZ scenery objects
 #include "ZScript/Scenery/Deep Sea.zsc"		// DSZ scenery objects

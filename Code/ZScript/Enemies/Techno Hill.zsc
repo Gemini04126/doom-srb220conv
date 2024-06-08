@@ -106,7 +106,6 @@ class GoldBuzz : SRB2EnemyTemplate
 			Loop;
 	}
 }
-
 class RedBuzz : GoldBuzz
 {
 	Default
@@ -122,5 +121,48 @@ class RedBuzz : GoldBuzz
 //			RBUZ AB 2 A_BuzzFly;
 			RBUZ AB 2 A_Chase;
 			Loop;
+	}
+}
+
+class Deton : SRB2EnemyTemplate // JANK AS FUCK, FIX LATER PLEASE
+{
+	action void A_DetonChase()
+	{
+		// okay so i'm not rewriting the whole original function.
+		// instead i'm gonna use the new version of A_Chase...
+		// maybe find a nice way to make it turn normally
+		if (target)
+			self.Speed = (target.Speed*3)*4;
+		A_Chase("Death");
+	}
+	Default
+	{
+		-SOLID
+		+MISSILE
+		+NOGRAVITY
+		+FLOAT
+		+SHOOTABLE
+		+MISSILEMORE
+		+MISSILEEVENMORE
+		+NOEXPLODEFLOOR
+		Health 1;
+		Damage 96;
+		ReactionTime 1;
+		Radius 20;
+		Height 32;
+		DropItem "Flicky";
+		SeeSound "sfx/deton";
+	}
+	States
+	{
+		Spawn:
+			DETN A 35 A_Look;
+			Loop;
+		See:
+			DETN ABCDEFGHGFEDCB 1 A_DetonChase;
+			Loop;
+		Death:
+			TNT1 A 0 A_Explode();
+			Goto Super::Death;
 	}
 }

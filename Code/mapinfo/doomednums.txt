@@ -8,6 +8,7 @@ DoomEdNums
 	// THZ enemies
 	103 = GoldBuzz
 	104 = RedBuzz
+	108 = Deton // fuck this guy
 
 	// Monitors
 	400 = SuperRingMonitor
@@ -30,8 +31,10 @@ DoomEdNums
 	// Various map objects
 	300 = Ring
 	312 = SpecialStageToken
+	500 = BubbleGenerator
 	501 = Signpost
 	502 = Starpost
+	540 = Fan
 	541 = THZSteam
 	550 = YellowUpSpring
 	551 = RedUpSpring
@@ -46,6 +49,17 @@ DoomEdNums
 	// Generic scenery
 	522 = CeilingSpike
 	523 = FloorSpike
+	// Ambience
+	700 = AmbientWaterA
+	701 = AmbientWaterB
+	702 = AmbientWaterC
+	703 = AmbientWaterD
+	704 = AmbientWaterE
+	705 = AmbientWaterF
+	706 = AmbientWaterG
+	707 = AmbientWaterH
+	708 = RandomAmbient
+	709 = RandomAmbient2
 	// GFZ scenery
 	802 = GFZPurpleFlower
 	800 = GFZOrangeFlower
@@ -54,6 +68,7 @@ DoomEdNums
 	804 = GFZBerryBush
 	// THZ scenery
 	900 = THZSteamFlower
+	901 = THZAlarm
 	// DSZ scenery
 	1000 = DSZGargoyle
 	1001 = DSZSeaweed

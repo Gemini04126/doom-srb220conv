@@ -55,6 +55,7 @@ class YellowDiagDownSpring : SRB2SpringTemplate
 		Radius 16;
 		Height 16;
 		+SPAWNCEILING
+		+NOGRAVITY
 	}
 	States
 	{

@@ -54,3 +54,20 @@ class FloorSpike : Actor
 			Stop;
 	}
 }
+
+class Fan : Actor
+{
+	Default
+	{
+		Radius 16;
+		Height 8;
+		Mass 100;
+		+SOLID
+	}
+	States
+	{
+		Spawn:
+			FANS ABCDE 1;
+			Loop;
+	}
+}
