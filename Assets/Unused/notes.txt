@@ -1,0 +1,1 @@
+STNUM font: removed because I noticed it conflicted with my custom HUD, and I'm not exactly making a custom HUD for this anyway.

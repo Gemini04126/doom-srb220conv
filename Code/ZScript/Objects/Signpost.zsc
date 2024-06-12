@@ -1,6 +1,7 @@
 class Signpost : Actor
 {
 	bool firstPlayerPassed;
+	TranslationID playerTranslation;
 	override void Tick()
 	{
 		Super.Tick();
@@ -16,6 +17,9 @@ class Signpost : Actor
 					firstPlayerPassed = true;
 					SetStateLabel("Spin");
 					A_StartSound("sfx/lvpass");
+					Console.Printf(self.playerTranslation .. "");
+					self.playerTranslation = ppawn.translation;
+					Console.Printf(self.playerTranslation .. "");
 					return;
 				}
 				else
@@ -45,7 +49,7 @@ class Signpost : Actor
 		Passed:
 			SIGN H 24;				// sign
 			SIGN H 1 A_BrainDie;	// end the level
-			SIGN H -1;
+			SIGN H -1 {self.translation = self.playerTranslation;} // set player color translation!
 			Stop;
 	}
 }

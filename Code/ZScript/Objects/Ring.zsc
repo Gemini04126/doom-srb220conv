@@ -1,5 +1,41 @@
 class Ring : HealthBonus
 {
+	override void Touch(Actor toucher)
+	{
+		// cash money
+		// RLP (Gemini0)
+		string moneyType = "RLP_Currency";
+		class<Actor> moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			toucher.GiveInventory(moneyType, 1); // idk how much rlp will give per coin or whatever ($25)
+		// BNDoom / any other mod with Zenny (Gemini0)
+		moneyType = "Zenny";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			toucher.GiveInventory(moneyType, 25); // why you would EVER play BNDoom with this... i have no fucking idea (25 Zenny)
+		// HXRTC (Hexereticdoom)
+		moneyType = "BronzeCoinBonus";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			toucher.GiveInventory(moneyType, 1); // $25
+		// DoomRLA Zeta-dimensional shop (Simon-v, Yholl)
+		moneyType = "ZSCreditChip";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			toucher.GiveInventory(moneyType, 25); // 25 credits
+		// Dino Crisis 2 Weapons (Dr_Cosmobyte)
+		moneyType = "DC2BronzeCoin";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			toucher.GiveInventory(moneyType, 1); // 1000 points
+		// Psychic (Xaser)
+		moneyType = "BloodCoin25";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			toucher.GiveInventory(moneyType, 1); // $25
+	// and finally get touched after all that. GOD i hope this isnt an active detriment to performance
+		Super.Touch(toucher);
+	}
 	// void A_AttractChase
 	Default
 	{

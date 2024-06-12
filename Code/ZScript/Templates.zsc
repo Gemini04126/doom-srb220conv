@@ -1,4 +1,4 @@
-class SRB2EnemyTemplate : Actor
+class SRB2EnemyTemplate : Actor abstract
 {
 	Default
 	{
@@ -21,7 +21,7 @@ class SRB2EnemyTemplate : Actor
 	}
 }
 
-class SRB2SceneryTemplate : Actor
+class SRB2SceneryTemplate : Actor abstract
 {
 	Default
 	{
@@ -32,7 +32,7 @@ class SRB2SceneryTemplate : Actor
 	}
 }
 
-class SRB2MonitorTemplate : Actor
+class SRB2MonitorTemplate : Actor abstract
 {
 	Default
 	{
@@ -62,7 +62,7 @@ class SRB2MonitorTemplate : Actor
 			Stop;
 	}
 }
-class SRB2MonitorIconTemplate : Actor
+class SRB2MonitorIconTemplate : Actor abstract
 {
 	void A_ItemBox() {}	// filled in by child objects
 	Default
@@ -88,7 +88,7 @@ class SRB2MonitorIconTemplate : Actor
 	}
 }
 
-class SRB2SpringTemplate : Actor
+class SRB2SpringTemplate : Actor abstract
 {
 	override void Touch(Actor toucher)
 	{

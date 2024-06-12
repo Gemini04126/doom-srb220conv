@@ -21,6 +21,37 @@ class SuperRingIcon : SRB2MonitorIconTemplate
 	{
 		A_StartSound("misc/i_pkup");
 		A_GiveInventory("Ring", 10, AAPTR_TARGET);
+		// cash money
+		// RLP (Gemini0)
+		string moneyType = "RLP_Currency";
+		class<Actor> moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 10); // idk how much rlp will give per coin or whatever ($10)
+		// BNDoom / any other mod with Zenny (Gemini0)
+		moneyType = "Zenny";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 250); // why you would EVER play BNDoom with this... i have no fucking idea (250 Zenny)
+		// HXRTC (Hexereticdoom)
+		moneyType = "BronzeCoinBonus";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 10); // $250
+		// DoomRLA Zeta-dimensional shop (Simon-v, Yholl)
+		moneyType = "ZSCreditChip";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 250); // 250 credits
+		// Dino Crisis 2 Weapons (Dr_Cosmobyte)
+		moneyType = "DC2BronzeCoin";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 10); // 10000 points
+		// Psychic (Xaser)
+		moneyType = "BloodCoin25";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 10); // $250
 	}
 	States
 	{
@@ -55,8 +86,39 @@ class ExtraLifeIcon : SRB2MonitorIconTemplate
 {
 	void A_ItemBox()
 	{
-		A_StartSound("sfx/1up");
+		target.A_StartSound("sfx/1up", flags: CHANF_UI|CHANF_LOCAL|CHANF_OVERLAP);
 		A_GiveInventory("Ring", 100, AAPTR_TARGET);
+		// cash money
+		// RLP (Gemini0)
+		string moneyType = "RLP_Currency";
+		class<Actor> moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 100); // idk how much rlp will give per coin or whatever ($100)
+		// BNDoom / any other mod with Zenny (Gemini0)
+		moneyType = "Zenny";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 2500); // why you would EVER play BNDoom with this... i have no fucking idea (2500 Zenny)
+		// HXRTC (Hexereticdoom)
+		moneyType = "BronzeCoinBonus";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 100); // $2500
+		// DoomRLA Zeta-dimensional shop (Simon-v, Yholl)
+		moneyType = "ZSCreditChip";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 2500); // 2500 credits
+		// Dino Crisis 2 Weapons (Dr_Cosmobyte)
+		moneyType = "DC2BronzeCoin";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 100); // 100000 points
+		// Psychic (Xaser)
+		moneyType = "BloodCoin25";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 100); // $2500
 	}
 	States
 	{

@@ -82,9 +82,9 @@ class SmallBubble : Actor
 		VSpeed 2;
 		Mass 16;
 		+NOGRAVITY
-		+NOCLIP
 		+NOBLOCKMAP
 		+MISSILE
+		+THRUACTORS
 	}
 	States
 	{
@@ -116,13 +116,25 @@ class ExtraLargeBubble : MediumBubble
 	{
 		invoker.vel.Z = 6/5;
 	}
+	override void Touch(Actor toucher)
+	{
+		if (InStateSequence(CurState, ResolveState('Spawn')))
+		{
+			if (toucher.player)
+			{
+				toucher.A_Stop();
+				toucher.A_StartSound("sfx/gasp");
+				toucher.player.mo.ResetAirSupply(false); // we have our own, more appropriate gasp sound
+			}
+			Die(self, self);
+		}
+	}
 	Default
 	{
 		Height 12;
-		+MISSILE
-		-NOCLIP
+		-THRUACTORS
 		-NOBLOCKMAP
-		// might need to make a Tick function or somethin'...
+		+SPECIAL
 	}
 	States
 	{

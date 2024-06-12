@@ -19,3 +19,6 @@ sfx/amwtr8	DSAMWTR8
 sfx/ambint	DSAMBINT
 sfx/ambin2	DSAMBIN2
 sfx/deton	DSDETON
+sfx/shield	DSSHIELD
+sfx/1up		"Music/O_XTLIFE"
+sfx/gasp	DSGASP
