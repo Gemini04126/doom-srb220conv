@@ -1,0 +1,31 @@
+Model BlueCrawla
+{
+	Path "MD2/Enemies"
+	Skin 0 "POSS.png"
+	Model 0 "POSS.md2"
+	Scale 3.0 3.0 3.0
+	NOINTERPOLATION
+
+	FrameIndex POSS A 0 0
+	FrameIndex POSS B 0 1
+	FrameIndex POSS C 0 2
+	FrameIndex POSS D 0 3
+	FrameIndex POSS E 0 4
+	FrameIndex POSS F 0 5
+}
+
+Model RedCrawla
+{
+	Path "MD2/Enemies"
+	Skin 0 "SPOS.png"
+	Model 0 "SPOS.md2"
+	Scale 3.0 3.0 3.0
+	NOINTERPOLATION
+	
+	FrameIndex SPOS A 0 0
+	FrameIndex SPOS B 0 1
+	FrameIndex SPOS C 0 2
+	FrameIndex SPOS D 0 3
+	FrameIndex SPOS E 0 4
+	FrameIndex SPOS F 0 5
+}

@@ -27,6 +27,11 @@ class SuperRingIcon : SRB2MonitorIconTemplate
 		class<Actor> moneyTypeExists = moneyType;
 		if (moneyTypeExists)
 			target.GiveInventory(moneyType, 10); // idk how much rlp will give per coin or whatever ($10)
+		// Pandora's Wrath (Gemini0, Mengo, JM2098)
+		moneyType = "GWM_PandoraPoints";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 50); // 50 points
 		// BNDoom / any other mod with Zenny (Gemini0)
 		moneyType = "Zenny";
 		moneyTypeExists = moneyType;
@@ -94,6 +99,11 @@ class ExtraLifeIcon : SRB2MonitorIconTemplate
 		class<Actor> moneyTypeExists = moneyType;
 		if (moneyTypeExists)
 			target.GiveInventory(moneyType, 100); // idk how much rlp will give per coin or whatever ($100)
+		// Pandora's Wrath (Gemini0, Mengo, JM2098)
+		moneyType = "GWM_PandoraPoints";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			target.GiveInventory(moneyType, 500); // 500 points
 		// BNDoom / any other mod with Zenny (Gemini0)
 		moneyType = "Zenny";
 		moneyTypeExists = moneyType;

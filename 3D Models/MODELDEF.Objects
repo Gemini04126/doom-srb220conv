@@ -1,0 +1,129 @@
+Model YellowDiagUpSpring
+{
+	Path "MD2/Items"
+	Skin 0 "YSPR.png"
+	Model 0 "YSPR.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex YSPR A 0 0
+	FrameIndex YSPR B 0 0
+	FrameIndex YSPR C 0 1
+	FrameIndex YSPR D 0 2
+	FrameIndex YSPR E 0 3
+}
+Model RedDiagUpSpring
+{
+	Path "MD2/Items"
+	Skin 0 "RSPR.png"
+	Model 0 "RSPR.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex RSPR A 0 0
+	FrameIndex RSPR B 0 0
+	FrameIndex RSPR C 0 1
+	FrameIndex RSPR D 0 2
+	FrameIndex RSPR E 0 3
+}
+
+Model YellowDiagDownSpring
+{
+	Path "MD2/Items"
+	Skin 0 "YSUD.png"
+	Model 0 "YSUD.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex YSUD A 0 0
+	FrameIndex YSUD B 0 0
+	FrameIndex YSUD C 0 1
+	FrameIndex YSUD D 0 2
+	FrameIndex YSUD E 0 3
+}
+Model RedDiagDownSpring
+{
+	Path "MD2/Items"
+	Skin 0 "RSUD.png"
+	Model 0 "RSUD.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex RSUD A 0 0
+	FrameIndex RSUD B 0 0
+	FrameIndex RSUD C 0 1
+	FrameIndex RSUD D 0 2
+	FrameIndex RSUD E 0 3
+}
+
+Model YellowUpSpring
+{
+	Path "MD2/Items"
+	Skin 0 "SPRY.png"
+	Model 0 "SPRY.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex SPRY A 0 0
+	FrameIndex SPRY B 0 0
+	FrameIndex SPRY C 0 1
+	FrameIndex SPRY D 0 2
+	FrameIndex SPRY E 0 3
+}
+Model RedUpSpring
+{
+	Path "MD2/Items"
+	Skin 0 "SPRR.png"
+	Model 0 "SPRR.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex SPRR A 0 0
+	FrameIndex SPRR B 0 0
+	FrameIndex SPRR C 0 1
+	FrameIndex SPRR D 0 2
+	FrameIndex SPRR E 0 3
+}
+Model BlueUpSpring
+{
+	Path "MD2/Items"
+	Skin 0 "SPRB.png"
+	Model 0 "SPRB.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex SPRB A 0 0
+	FrameIndex SPRB B 0 0
+	FrameIndex SPRB C 0 1
+	FrameIndex SPRB D 0 2
+	FrameIndex SPRB E 0 3
+}
+
+Model YellowDownSpring
+{
+	Path "MD2/Items"
+	Skin 0 "SUDY.png"
+	Model 0 "SUDY.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex SUDY A 0 0
+	FrameIndex SUDY B 0 0
+	FrameIndex SUDY C 0 1
+	FrameIndex SUDY D 0 2
+	FrameIndex SUDY E 0 3
+}
+Model RedDownSpring
+{
+	Path "MD2/Items"
+	Skin 0 "SUDR.png"
+	Model 0 "SUDR.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex SUDR A 0 0
+	FrameIndex SUDR B 0 0
+	FrameIndex SUDR C 0 1
+	FrameIndex SUDR D 0 2
+	FrameIndex SUDR E 0 3
+}

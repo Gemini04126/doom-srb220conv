@@ -1,0 +1,181 @@
+Model Ring
+{
+	Path "MD2/Characters" // ...what?
+	Skin 0 "RING.png"
+	Model 0 "RING.md2"
+	Scale 2.0 2.0 2.0 // scaled down from 3.0 because sizes
+	NOINTERPOLATION
+
+	FrameIndex RING A 0 0
+	FrameIndex RING B 0 1
+	FrameIndex RING C 0 2
+	FrameIndex RING D 0 3
+	FrameIndex RING E 0 4
+	FrameIndex RING F 0 5
+	FrameIndex RING G 0 6
+	FrameIndex RING H 0 7
+	FrameIndex RING I 0 8
+	FrameIndex RING J 0 9
+	FrameIndex RING K 0 10
+	FrameIndex RING L 0 11
+	FrameIndex RING M 0 12
+	FrameIndex RING N 0 13
+	FrameIndex RING O 0 14
+	FrameIndex RING P 0 15
+	FrameIndex RING Q 0 16
+	FrameIndex RING R 0 17
+	FrameIndex RING S 0 18
+	FrameIndex RING T 0 19
+	FrameIndex RING U 0 20
+	FrameIndex RING V 0 21
+	FrameIndex RING W 0 22
+	FrameIndex RING X 0 23
+}
+
+Model SpecialStageToken
+{
+	Path "MD2/Items"
+	Model 0 "EMMY.md2"
+	Skin 0 "EMMY0.png"
+	Model 1 "EMMY.md2"
+	Skin 1 "EMMY1.png"
+	Model 2 "EMMY.md2"
+	Skin 2 "EMMY2.png"
+	Model 3 "EMMY.md2"
+	Skin 3 "EMMY3.png"
+	Model 4 "EMMY.md2"
+	Skin 4 "EMMY4.png"
+	Model 5 "EMMY.md2"
+	Skin 5 "EMMY5.png"
+	Model 6 "EMMY.md2"
+	Skin 6 "EMMY6.png"
+	Scale 3.0 3.0 3.0
+	ZOffset -3
+	NOINTERPOLATION
+
+	FrameIndex EMMY A 0 0
+	FrameIndex EMMY B 1 0
+	FrameIndex EMMY C 2 0
+	FrameIndex EMMY D 3 0
+	FrameIndex EMMY E 4 0
+	FrameIndex EMMY F 5 0
+	FrameIndex EMMY G 6 0
+}
+
+Model SuperRingMonitor // fucked up man
+{
+	Path "MD2/Items"
+
+	Model 0 "MTEX.md2"
+	Skin 0 "SRBX.png"
+	Model 1 "MTEX.md2"
+	Skin 1 "MTEX.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex SRBX A 0 0
+	FrameIndex MTEX A 1 0
+	FrameIndex MTEX B 1 1
+	FrameIndex MTEX C 1 2
+	FrameIndex MTEX D 1 3
+	FrameIndex MTEX E 1 4
+	FrameIndex MTEX F 1 5
+}
+Model SuperRingIcon
+{
+	Path "MD2/Items"
+	Model 0 "GRTV.md2" // Had to make this myself based on the Eggman monitor model?
+	Skin 0 "SRBX.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex SRBX B 0 1
+}
+
+Model ExtraLifeMonitor // fucked up man
+{
+	Path "MD2/Items"
+	Model 0 "QUES.md2"
+	Skin 0 "QUES.png"
+	Model 1 "MTEX.md2"
+	Skin 1 "MTEX.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex QUES A 0 0
+	FrameIndex MTEX A 1 0
+	FrameIndex MTEX B 1 1
+	FrameIndex MTEX C 1 2
+	FrameIndex MTEX D 1 3
+	FrameIndex MTEX E 1 4
+	FrameIndex MTEX F 1 5
+}
+Model ExtraLifeIcon
+{
+	Path "MD2/Items"
+	Model 0 "QUES.md2"
+	Skin 0 "QUES.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex QUES B 0 1
+}
+
+Model AttractionShieldMonitor // fucked up man
+{
+	Path "MD2/Items"
+	Model 0 "YLTV.md2"
+	Skin 0 "YLTV.png"
+	Model 1 "MTEX.md2"
+	Skin 1 "MTEX.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex YLTV A 0 0
+	FrameIndex MTEX A 1 0
+	FrameIndex MTEX B 1 1
+	FrameIndex MTEX C 1 2
+	FrameIndex MTEX D 1 3
+	FrameIndex MTEX E 1 4
+	FrameIndex MTEX F 1 5
+}
+Model AttractionShieldIcon
+{
+	Path "MD2/Items"
+	Model 0 "YLTV.md2"
+	Skin 0 "YLTV.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex YLTV B 0 1
+}
+
+Model ForceShieldMonitor // fucked up man
+{
+	Path "MD2/Items"
+	Model 0 "BLTV.md2"
+	Skin 0 "BLTV.png"
+	Model 1 "MTEX.md2"
+	Skin 1 "MTEX.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex BLTV A 0 0
+	FrameIndex MTEX A 1 0
+	FrameIndex MTEX B 1 1
+	FrameIndex MTEX C 1 2
+	FrameIndex MTEX D 1 3
+	FrameIndex MTEX E 1 4
+	FrameIndex MTEX F 1 5
+}
+Model ForceShieldIcon
+{
+	Path "MD2/Items"
+	Model 0 "BLTV.md2"
+	Skin 0 "BLTV.png"
+	Scale 1 1 1
+	NOINTERPOLATION
+
+	FrameIndex BLTV B 0 1
+}
+// i don't care enough to make more

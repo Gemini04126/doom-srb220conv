@@ -131,6 +131,7 @@ class Deton : SRB2EnemyTemplate // JANK AS FUCK, FIX LATER PLEASE
 		// okay so i'm not rewriting the whole original function.
 		// instead i'm gonna use the new version of A_Chase...
 		// maybe find a nice way to make it turn normally
+		// 6/13/24: holy shit maybe i really just should find a new way. this sucks. also +SPECIAL this later
 		if (target)
 			self.Speed = (target.Speed*3)*4;
 		A_Chase("Death");
@@ -145,6 +146,7 @@ class Deton : SRB2EnemyTemplate // JANK AS FUCK, FIX LATER PLEASE
 		+MISSILEMORE
 		+MISSILEEVENMORE
 		+NOEXPLODEFLOOR
+		+AMBUSH // maybe?? just so they don't chase you down
 		Health 1;
 		Damage 96;
 		ReactionTime 1;

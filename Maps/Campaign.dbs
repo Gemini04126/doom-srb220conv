@@ -694,7 +694,7 @@ maps
 	
 	MAP05
 	{
-		viewpositiony = -1632f;
+		viewpositiony = -6008.586f;
 		custombrightness = 196;
 		
 		testpostcommand
@@ -714,9 +714,9 @@ maps
 			stderriserror = true;
 			exitcodeiserror = true;
 		}
-		viewpositionx = 5216f;
+		viewpositionx = -1965.739f;
 		overridemiddletexture = false;
-		viewscale = 1.175964f;
+		viewscale = 0.1441608f;
 		defaulttoptexture = "GLASS2";
 		
 		testprecommand
@@ -751,7 +751,7 @@ maps
 			gridoriginx = 0;
 			backoffsetx = 0;
 			gridrotate = 0;
-			gridsize = 32;
+			gridsize = 16;
 			backscaley = 100;
 			backsource = 0;
 		}
@@ -891,7 +891,7 @@ maps
 	
 	MAP07
 	{
-		viewpositiony = -16134.38f;
+		viewpositiony = -4075.047f;
 		custombrightness = 196;
 		
 		testpostcommand
@@ -911,35 +911,9 @@ maps
 			stderriserror = true;
 			exitcodeiserror = true;
 		}
-		viewpositionx = -5496.401f;
+		viewpositionx = -14013.34f;
 		overridemiddletexture = false;
-		viewscale = 1.95609f;
-		
-		fieldtypes
-		{
-			
-			linedef
-			{
-				noclimb = 3;
-				noskew = 3;
-				midsolid = 3;
-				midpeg = 3;
-				arg5 = 0;
-				skewtd = 3;
-			}
-			
-			sector
-			{
-				specialstagepit = 3;
-				lightalpha = 0;
-				triggerer = 2;
-				returnflag = 3;
-				exit = 3;
-				doublestepup = 3;
-				triggerline_plane = 3;
-				triggertag = 0;
-			}
-		}
+		viewscale = 1.987379f;
 		defaulttoptexture = "DSZ10";
 		
 		testprecommand
@@ -992,6 +966,32 @@ maps
 				option2 = 0;
 				notfortesting = 0;
 				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				noclimb = 3;
+				midsolid = 3;
+				skewtd = 3;
+				noskew = 3;
+				midpeg = 3;
+				arg5 = 0;
+			}
+			
+			sector
+			{
+				triggertag = 0;
+				lightalpha = 0;
+				exit = 3;
+				specialstagepit = 3;
+				returnflag = 3;
+				doublestepup = 3;
+				triggerline_plane = 3;
+				triggerer = 2;
 			}
 		}
 	}

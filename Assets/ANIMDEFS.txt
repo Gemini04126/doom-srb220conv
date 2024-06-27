@@ -1,11 +1,41 @@
 flat LITEY1
 	range LITEY3 tics 4
-flat FWATER1
-	range FWATER16 tics 4
+flat FWATER1 // requires this because it thinks FWATER1 should go to FWATER11
+	pic FWATER1 tics 4
+	pic FWATER2 tics 4
+	pic FWATER3 tics 4
+	pic FWATER4 tics 4
+	pic FWATER5 tics 4
+	pic FWATER6 tics 4
+	pic FWATER7 tics 4
+	pic FWATER8 tics 4
+	pic FWATER9 tics 4
+	pic FWATER10 tics 4
+	pic FWATER11 tics 4
+	pic FWATER12 tics 4
+	pic FWATER13 tics 4
+	pic FWATER14 tics 4
+	pic FWATER15 tics 4
+	pic FWATER16 tics 4
 flat BWATER01
 	range BWATER16 tics 4
 flat LWATER1
-	range LWATER16 tics 4
+	pic LWATER1 tics 4
+	pic LWATER2 tics 4
+	pic LWATER3 tics 4
+	pic LWATER4 tics 4
+	pic LWATER5 tics 4
+	pic LWATER6 tics 4
+	pic LWATER7 tics 4
+	pic LWATER8 tics 4
+	pic LWATER9 tics 4
+	pic LWATER10 tics 4
+	pic LWATER11 tics 4
+	pic LWATER12 tics 4
+	pic LWATER13 tics 4
+	pic LWATER14 tics 4
+	pic LWATER15 tics 4
+	pic LWATER16 tics 4
 flat WATER0
 	range WATER7 tics 4
 // SWATER seems to not exist!

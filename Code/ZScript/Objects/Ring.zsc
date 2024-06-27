@@ -7,7 +7,12 @@ class Ring : HealthBonus
 		string moneyType = "RLP_Currency";
 		class<Actor> moneyTypeExists = moneyType;
 		if (moneyTypeExists)
-			toucher.GiveInventory(moneyType, 1); // idk how much rlp will give per coin or whatever ($25)
+			toucher.GiveInventory(moneyType, 1); // idk how much rlp will give per coin or whatever ($1)
+		// Pandora's Wrath (Gemini0, Mengo, JM2098)
+		moneyType = "GWM_PandoraPoints";
+		moneyTypeExists = moneyType;
+		if (moneyTypeExists)
+			toucher.GiveInventory(moneyType, 5); // 5 points
 		// BNDoom / any other mod with Zenny (Gemini0)
 		moneyType = "Zenny";
 		moneyTypeExists = moneyType;

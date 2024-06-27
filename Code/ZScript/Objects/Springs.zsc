@@ -139,6 +139,7 @@ class YellowDownSpring : YellowUpSpring
 	{
 		Speed -20;
 		+SPAWNCEILING
+		+NOGRAVITY
 	}
 	States
 	{
