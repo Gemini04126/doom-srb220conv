@@ -23,3 +23,8 @@ GameInfo
 	"Don't go!\nYou might find the hidden\nlevels!",
 	"Hit the 'N' key, Sonic!\nThe 'N' key!"
 }
+
+gamedefaults
+{
+	PixelRatio = 1.0
+}

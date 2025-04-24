@@ -3,7 +3,7 @@ Model Ring
 	Path "MD2/Characters" // ...what?
 	Skin 0 "RING.png"
 	Model 0 "RING.md2"
-	Scale 2.0 2.0 2.0 // scaled down from 3.0 because sizes
+	Scale 1.75 1.75 1.75 // scaled down from 3.0 because sizes
 	NOINTERPOLATION
 
 	FrameIndex RING A 0 0
@@ -39,27 +39,12 @@ Model SpecialStageToken
 	Skin 0 "EMMY0.png"
 	Model 1 "EMMY.md2"
 	Skin 1 "EMMY1.png"
-	Model 2 "EMMY.md2"
-	Skin 2 "EMMY2.png"
-	Model 3 "EMMY.md2"
-	Skin 3 "EMMY3.png"
-	Model 4 "EMMY.md2"
-	Skin 4 "EMMY4.png"
-	Model 5 "EMMY.md2"
-	Skin 5 "EMMY5.png"
-	Model 6 "EMMY.md2"
-	Skin 6 "EMMY6.png"
-	Scale 3.0 3.0 3.0
-	ZOffset -3
+	Scale 2.0 2.0 2.0
+	ZOffset -6
 	NOINTERPOLATION
 
 	FrameIndex EMMY A 0 0
 	FrameIndex EMMY B 1 0
-	FrameIndex EMMY C 2 0
-	FrameIndex EMMY D 3 0
-	FrameIndex EMMY E 4 0
-	FrameIndex EMMY F 5 0
-	FrameIndex EMMY G 6 0
 }
 
 Model SuperRingMonitor // fucked up man

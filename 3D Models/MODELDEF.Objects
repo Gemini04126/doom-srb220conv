@@ -127,3 +127,30 @@ Model RedDownSpring
 	FrameIndex SUDR D 0 2
 	FrameIndex SUDR E 0 3
 }
+
+Model Starpost
+{
+	Path "MD2/Items"
+	Skin 0 "STPT.png"
+	Model 0 "STPT.md2"
+	Scale 1 1 1
+	NOINTERPOLATION
+	
+	FrameIndex STPT A 0 1
+	FrameIndex STPT B 0 0
+	FrameIndex STPT C 0 1
+	FrameIndex STPT D 0 2
+	FrameIndex STPT E 0 3
+	FrameIndex STPT F 0 4
+	FrameIndex STPT G 0 5
+	FrameIndex STPT H 0 6
+	FrameIndex STPT I 0 7
+	FrameIndex STPT J 0 8
+	FrameIndex STPT K 0 9
+	FrameIndex STPT L 0 10
+	FrameIndex STPT M 0 11
+	FrameIndex STPT N 0 12
+	FrameIndex STPT O 0 13
+	FrameIndex STPT P 0 14
+	FrameIndex STPT Q 0 15
+}

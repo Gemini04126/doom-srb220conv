@@ -4,6 +4,39 @@ adddefaultmap
 	AirControl = 0.33
 }
 
+clearskills
+skill normal
+{
+	DefaultSkill
+	SpawnFilter = 3
+}
+
+clearepisodes
+episode MAP01
+{
+	Name = "Singleplayer maps"
+	Key = "S"
+	NoSkillMenu
+}
+episode MAP29
+{
+	Name = "Extra maps"
+	Key = "E"
+	NoSkillMenu
+}
+episode MAP50
+{
+	Name = "Special Stages"
+	Key = "S"
+	NoSkillMenu
+}
+episode MAP90
+{
+	Name = "Match maps"
+	Key = "M"
+	NoSkillMenu
+}
+
 // GFZ
 map MAP01 "Greenflower Zone Act 1"
 {
@@ -102,7 +135,7 @@ map MAP17 "Blue Mountain Zone Act 2" // Does BMZ have a signpost? Check later. A
 }
 
 // ERZ
-map MAP22 "Egg Rock Zone Act 1" // I sincerely hope that UDMF has reverse gravity... I doubt it, though.
+map MAP22 "Egg Rock Zone Act 1" // I sincerely hope that UDMF has reverse gravity... I doubt it, though. EDIT: it does, technically, but not *reverse*. just negative.
 {
 	Music = "O_MAP22M"
 	Sky1 = "SKY22"
@@ -118,7 +151,7 @@ map MAP24 "Egg Rock Zone Act 3"
 {
 	Music = "O_MAP26M"
 	Sky1 = "SKY22"
-	Next = MAP29
+	Next = EndTitle
 }
 
 // havent changed from 1094 yet past here
@@ -155,7 +188,7 @@ map MAP40 "Neo Aerial Garden Zone"
 {
 	Music = "O_MAPB6M"
 	Sky1 = "SKY1"
-	Next = MAP70 // Skip Special Stages. They can be accessed later. The "next map" for this was originally AGZ but I don't want to do that. Maybe I'll split these into "episodes".
+	Next = EndTitle // Skip Special Stages. They can be accessed later. The "next map" for this was originally AGZ but I don't want to do that. Maybe I'll split these into "episodes".
 }
 
 map MAP50 "Special Stage 1"

@@ -318,15 +318,31 @@ class InvincibilityIcon : SRB2MonitorIconTemplate
 }
 class InvincibilityIconPowerup : InvulnerabilitySphere
 {
+	override Bool Use(bool pickup)
+	{
+		S_ChangeMusic("O_INVINC");
+		Super.Use(pickup);
+		return true;
+	}
 	Default
 	{
-		Powerup.Duration 20*35;	// the standard 20-second invincibility
-		Inventory.PickupMessage "";
+		+COUNTITEM
+		+INVENTORY.AUTOACTIVATE
+		+INVENTORY.ALWAYSPICKUP
+		+INVENTORY.BIGPOWERUP
+		Inventory.MaxAmount 0;
 		Powerup.Type "PowerInvincible";
+		Powerup.Color "None";
+		Inventory.PickupMessage "";
 	}
 }
 class PowerInvincible : PowerInvulnerable
 {
+	override void EndEffect()
+	{
+		Super.EndEffect();
+		S_ChangeMusic("*");
+	}
 	Default
 	{
 		Powerup.Duration -20;
@@ -370,6 +386,12 @@ class SuperSneakersIcon : SRB2MonitorIconTemplate
 }
 class SuperSneakersIconPowerup : PowerupGiver
 {
+	override Bool Use(bool pickup)
+	{
+		S_ChangeMusic("O_SHOES");
+		Super.Use(pickup);
+		return true;
+	}
 	Default
 	{
 		+COUNTITEM
@@ -383,6 +405,11 @@ class SuperSneakersIconPowerup : PowerupGiver
 }
 class PowerSpeedShoes : PowerSpeed
 {
+	override void EndEffect()
+	{
+		Super.EndEffect();
+		S_ChangeMusic("*");
+	}
 	Default
 	{
 		Powerup.Duration -20;

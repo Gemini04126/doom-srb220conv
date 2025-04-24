@@ -96,4 +96,102 @@ maps
 			}
 		}
 	}
+	
+	MAP99
+	{
+		viewpositiony = -2271.787f;
+		custombrightness = 196;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		uselongtexturenames = false;
+		overrideceiltexture = false;
+		overridebottomtexture = false;
+		defaultfloortexture = "GFZFLR02";
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		viewpositionx = -3098.824f;
+		overridemiddletexture = false;
+		viewscale = 2.967049f;
+		defaulttoptexture = "GFZGRASS";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overridetoptexture = false;
+		customceilheight = 128;
+		customfloorheight = 0;
+		defaultwalltexture = "GFZGRASS";
+		overridefloortexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		defaultceiltexture = "F_SKY1";
+		defaultbottomtexture = "GFZGRASS";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			stderriserror = true;
+			exitcodeiserror = true;
+		}
+		overrideceilheight = false;
+		
+		grid
+		{
+			backscalex = 100;
+			gridoriginy = 0;
+			background = "";
+			backoffsety = 0;
+			gridoriginx = 0;
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridsize = 32;
+			backscaley = 100;
+			backsource = 0;
+		}
+		overridebrightness = false;
+		overridefloorheight = false;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "/home/dustinr/.srb2/Old Versions/SRB2 2.0.7/srb2.srb";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			linedef
+			{
+				midpeg = 3;
+			}
+			
+			sector
+			{
+				lightalpha = 0;
+				exit = 3;
+				specialstagepit = 3;
+				returnflag = 3;
+			}
+		}
+	}
 }

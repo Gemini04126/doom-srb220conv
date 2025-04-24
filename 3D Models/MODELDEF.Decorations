@@ -1,0 +1,32 @@
+Model GFZBigFlower
+{
+	Path "MD2/Items"
+	Skin 0 "FWR2.png"
+	Model 0 "FWR2.md2"
+	Scale 2.0 2.0 2.0
+	NOINTERPOLATION
+
+	FrameIndex FWR2 A 0 0
+	FrameIndex FWR2 B 0 1
+}
+
+Model GFZBush
+{
+	Path "MD2/Items"
+	Skin 0 "BUS2.png"
+	Model 0 "BUS2.md2"
+	Scale 3.0 3.0 3.0
+	NOINTERPOLATION
+
+	FrameIndex BUS2 A 0 0
+}
+Model GFZBerryBush
+{
+	Path "MD2/Items"
+	Skin 0 "BUS1.png"
+	Model 0 "BUS2.md2"
+	Scale 3.0 3.0 3.0
+	NOINTERPOLATION
+
+	FrameIndex BUS1 A 0 0
+}
